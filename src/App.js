@@ -1,10 +1,21 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
+
+import Logo from './assets/Wright-Logo.png';
+import Join from './assets/Join-Banner.png'
 
 function App() {
 	return (
 		<div className="App">
-			WD Wright
+			<div className="navigation">
+				<div className="container-ipad">
+					<img className="logo" src={Logo} alt="Logo"/>
+					<img className="join" src={Join} alt="Join"/>
+				</div>
+			</div>
+			<div className="banner">Banner</div>
+			<div className="main">Main</div>
+			<div className="footer">Footer</div>
 		</div>
 	);
 }
