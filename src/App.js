@@ -9,7 +9,9 @@ function App() {
 		<div className="App">
 			<div className="navigation">
 				<div className="container-ipad">
-					<img className="logo" src={Logo} alt="Logo"/>
+					<a href="/">
+						<img className="logo" src={Logo} alt="Logo"/>
+					</a>
 					<img className="join" src={Join} alt="Join"/>
 				</div>
 			</div>
