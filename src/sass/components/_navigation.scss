@@ -1,12 +1,15 @@
 .navigation {
-    background-color: #BBCDD7;
+    background-color: rgba($color: $banner-blue, $alpha: 0);
     height: 8rem;
     width: 100%;
+    z-index: 10;
+    position: relative;
 
     .logo {
         width: 16rem;
         position: relative;
         top: 1.8rem;
+        z-index: 10;
     }
 
     .join {
@@ -14,5 +17,6 @@
         position: relative;
         top: 1rem;
         float: right;
+        z-index: 10;
     }
 }

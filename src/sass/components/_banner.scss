@@ -1,0 +1,60 @@
+.banner {
+    height: 100rem;
+    position: relative;
+    z-index: 0;
+    top: -8rem;
+
+    &__photo {
+        background-image: url('./assets/Blurred-bg.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+    }
+
+    &__video {
+        z-index: 1;
+        position: absolute;
+        left: 50%;
+        top: 45%;
+        transform: translate(-50%, -50%);
+    }
+
+    .video-size {
+        width: 640px;
+        height: 360px;
+        border: solid 4px $primary-color-blue;
+
+        transform: scale(1.1)
+    }
+
+    .button-container {
+        z-index: 1;
+        position: absolute;
+        left: 50%;
+        top: 80%;
+        transform: translate(-50%, -50%);
+    }
+
+    .apply-now {
+        background-color: $primary-color-red;
+        width: 40rem;
+        height: 8.5rem;
+        border-radius: 50px;
+        border: none;
+        color: $color-white;
+        font-size: $font-large;
+        outline: none;
+        transition: .2s all;
+
+        &:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
+        &:active {
+            transform: scale(1.05);
+            background-color: $primary-color-yellow;
+            color: $color-black;
+        }
+    }
+}
