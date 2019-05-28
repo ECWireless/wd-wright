@@ -5,18 +5,34 @@
     z-index: 10;
     position: relative;
 
+    @include respond(phone) {
+        height: 5.5rem;
+    }
+
     .logo {
-        width: 16rem;
         position: relative;
+        width: 16rem;
         top: 1.8rem;
         z-index: 10;
+
+        @include respond(phone) {
+            width: 10rem;
+            top: .3rem;
+            left: 2rem;
+        }
     }
 
     .join {
-        width: 30rem;
         position: relative;
+        width: 30rem;
         top: 1rem;
         float: right;
         z-index: 10;
+
+        @include respond(phone) {
+            width: 16.5rem;
+            top: 1.6rem;
+            right: 2rem;
+        }
     }
 }

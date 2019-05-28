@@ -21,9 +21,9 @@ function App() {
 					<iframe
 						className="video-size"
 						src="https://player.vimeo.com/video/338717235"
-						frameborder="0"
+						frameBorder="0"
 						allow="autoplay; fullscreen"
-						allowfullscreen
+						allowFullScreen
 						title="banner-video"
 					>
 					</iframe>
