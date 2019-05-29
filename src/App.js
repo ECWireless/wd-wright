@@ -39,12 +39,14 @@ function App() {
 				</div>
 			</div>
 			<div className="perks">
+				<div className="perks__heading1">We are looking for individuals who are ready to start a career or start on a new career path.</div>
 				<div className="row">
 					<div className="col-1-of-2">
-						<p className="center">Test</p>
+						<p className="center">Construction Photo</p>
 					</div>
 					<div className="col-1-of-2">
-						<p className="center">Test</p>
+						<p className="center">Get paid weekly</p>
+						<p className="center">Get a raise after 6 months</p>
 					</div>
 				</div>
 			</div>

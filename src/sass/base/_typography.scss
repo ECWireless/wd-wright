@@ -1,19 +1,22 @@
-// Heading-Large
+// Extra Heading-Large
+.heading-x-large {
+    font-family: $heading-font;
+    font-size: $font-x-large;
+}
 
+// Heading-Large
 .heading-large {
     font-family: $heading-font;
     font-size: $font-large;
 }
 
 // Heading-Medium
-
-.heading-large {
+.heading-medium {
     font-family: $heading-font;
-    font-size: $font-large;
+    font-size: $font-medium;
 }
 
 // Heading-Small
-
 .heading-small {
     font-family: $heading-font;
     font-size: $font-small;

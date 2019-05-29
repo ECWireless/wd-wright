@@ -1,0 +1,11 @@
+.perks {
+    max-width: 100rem;
+    margin: 0 auto;
+
+    &__heading1 {
+        color: $primary-color-blue;
+        font-weight: bold;
+        text-align: center;
+        font-size: $font-large;
+    }
+}

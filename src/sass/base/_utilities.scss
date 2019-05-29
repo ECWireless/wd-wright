@@ -1,18 +1,19 @@
 // Containers
-
 .container-ipad {
     max-width: 120rem;
     margin: 0 auto;
 }
 
 // Text Decorations
-
 .uppercase {
     text-transform: uppercase;
 }
 
-// Text Aligns
+.bold {
+    font-weight: bold;
+}
 
+// Text Aligns
 .left {
     text-align: left;
 }
@@ -23,4 +24,22 @@
 
 .right {
     text-align: right;
+}
+
+// Font Colors
+.red {
+    color: $primary-color-red;
+}
+
+.yellow {
+    color: $primary-color-yellow;
+}
+
+.blue {
+    color: $primary-color-blue;
+}
+
+// Margins
+.margin-b-medium {
+    margin-bottom: 2rem;
 }
