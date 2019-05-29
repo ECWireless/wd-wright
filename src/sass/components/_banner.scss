@@ -66,6 +66,7 @@
         color: $color-white;
         outline: none;
         transition: .2s all;
+        box-shadow: $shadow-origin;
 
         width: 40rem;
         height: 8.5rem;
@@ -78,14 +79,18 @@
         }
 
         &:hover {
-            transform: scale(1.1);
+            transform: scale(1.03);
+            box-shadow: $shadow-hover;
             cursor: pointer;
+
         }
 
+        &:focus,
         &:active {
-            transform: scale(1.05);
+            transform: scale(1);
             background-color: $primary-color-yellow;
             color: $color-black;
+            box-shadow: $shadow-origin;
         }
     }
 }

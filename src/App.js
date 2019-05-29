@@ -29,7 +29,7 @@ function App() {
 					</iframe>
 				</div>
 				<div className="button-container">
-					<a href="https://www.wdwright.com/apply-online">
+					<a href="https://www.wdwright.com/apply-online" target="_blank" rel="noopener noreferrer">
 						<button
 							className="apply-now"
 						>
@@ -38,8 +38,17 @@ function App() {
 					</a>
 				</div>
 			</div>
-			<div className="main">Main</div>
-			<div className="footer">Footer</div>
+			<div className="perks">
+				<div className="row">
+					<div className="col-1-of-2">
+						<p className="center">Test</p>
+					</div>
+					<div className="col-1-of-2">
+						<p className="center">Test</p>
+					</div>
+				</div>
+			</div>
+			<div className="footer center">Footer</div>
 		</div>
 	);
 }
