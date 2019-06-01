@@ -1,59 +1,105 @@
 import React from 'react';
 import './App.scss';
 
-import Logo from './assets/Wright-Logo.png';
-import Join from './assets/Join-Banner.png'
+import Navigation from './components/Navigation';
+import Banner from './components/Banner';
+import Perks from './components/Perks';
 
 function App() {
 	return (
 		<div className="App">
-			<div className="navigation">
-				<div className="container-ipad">
-					<a href="/">
-						<img className="logo" src={Logo} alt="Logo"/>
-					</a>
-					<img className="join" src={Join} alt="Join"/>
-				</div>
-			</div>
-			<div className="banner">
-				<div className="banner__photo"/>
-				<div className="banner__video">
-					<iframe
-						className="video-size"
-						src="https://player.vimeo.com/video/338717235"
-						frameBorder="0"
-						allow="autoplay; fullscreen"
-						allowFullScreen
-						title="banner-video"
-					>
-					</iframe>
-				</div>
-				<div className="button-container">
-					<a href="https://www.wdwright.com/apply-online" target="_blank" rel="noopener noreferrer">
-						<button
-							className="apply-now"
-						>
-							Apply Now!
-						</button>
-					</a>
-				</div>
-			</div>
-			<div className="perks">
-				<div className="perks__heading1">We are looking for individuals who are ready to start a career or start on a new career path.</div>
+			<Navigation />
+			<Banner />
+			<Perks />
+			<div className="videos">
 				<div className="row">
 					<div className="col-1-of-2">
-						<div className="center perks__construction-photo"></div>
+						<p className="videos__heading1">Safe Communities</p>
+						<p className="videos__paragraph1">Join us if you are eager to develop your skills and apply 
+							them together to create a safe community where people play,
+							work, learn and live. And you’ll get all the training you need.
+							You will be in charge of maintaining high safety standards on
+							roadways with unpredictable motorists.
+						</p>
 					</div>
 					<div className="col-1-of-2">
-					<p className="perks__bullet1">• GET PAID WEEKLY</p>
-						<p className="perks__bullet2">• GET A RAISE AFTER 6 MONTHS</p>
+						<iframe
+							className="videos__video1"
+							src="https://player.vimeo.com/video/338717235"
+							frameBorder="0"
+							allow="autoplay; fullscreen"
+							allowFullScreen
+							title="banner-video"
+						>
+						</iframe>
 					</div>
 				</div>
-				<div className="center perks__paragraph1">Candidates must become certified in basic traffic safety techniques by Attending a training class provided by the company.</div>
-				<hr className="perks__line"/>
-				<div className="center perks__paragraph2">Workers must maintain a valid driver’s license during entire employment and must pass a drug test prior to employment.</div>
+
+				<div className="row">
+					<div className="col-1-of-2">
+					<iframe
+							className="videos__video2"
+							src="https://player.vimeo.com/video/338717235"
+							frameBorder="0"
+							allow="autoplay; fullscreen"
+							allowFullScreen
+							title="banner-video"
+						>
+						</iframe>
+					</div>
+					<div className="col-1-of-2">
+						<div className="videos__heading2">CONTROL YOUR CAREER</div>
+						<p className="videos__paragraph2 margin-b-medium">We promote from within.</p>
+						<p className="videos__paragraph2">When you work hard you’ll be rewarded. You can get promoted
+							within months and earn responsibility for your work team and
+							drive a company truck.
+						</p>
+					</div>
+				</div>
+
+				<div className="row">
+					<div className="col-1-of-2">
+						<p className="videos__heading1 margin-t-medium">WORK FAMILY</p>
+						<p className="videos__paragraph1">You are part of a team of workers. We know it takes
+							A diverse team to build the future and we are looking
+							for all types of talent to contribute.
+						</p>
+					</div>
+					<div className="col-1-of-2">
+						<iframe
+							className="videos__video1"
+							src="https://player.vimeo.com/video/338717235"
+							frameBorder="0"
+							allow="autoplay; fullscreen"
+							allowFullScreen
+							title="banner-video"
+						>
+						</iframe>
+					</div>
+				</div>
+
+				<div className="row">
+					<div className="col-1-of-2">
+					<iframe
+							className="videos__video3"
+							src="https://player.vimeo.com/video/338717235"
+							frameBorder="0"
+							allow="autoplay; fullscreen"
+							allowFullScreen
+							title="banner-video"
+						>
+						</iframe>
+					</div>
+					<div className="col-1-of-2">
+						<div className="videos__heading3 margin-t-medium">NOT A DESK JOB</div>
+						<p className="videos__paragraph3 margin-b-medium">You can enjoy working outside and the variety of each
+new job site. No day is the same. If you pay attention and can
+handle directing a high volume of traffic, this job is made for you.
+						</p>
+					</div>
+				</div>
 			</div>
-			<div className="perks__banner"></div>
+			<br />
 			<div className="footer center">Footer</div>
 		</div>
 	);

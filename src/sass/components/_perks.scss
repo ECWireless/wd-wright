@@ -81,6 +81,7 @@
         font-family: $paragraph-font;
         font-size: $font-medium;
         margin-bottom: 5rem;
+        color: $primary-color-blue;
 
         @include respond(phone) {
             font-size: 1.4rem;
@@ -106,6 +107,7 @@
         font-family: $paragraph-font;
         font-size: $font-medium;
         margin-bottom: 10rem;
+        color: $primary-color-blue;
 
         @include respond(phone) {
             font-size: 1.4rem;
@@ -124,6 +126,7 @@
 
         @include respond(phone) {
             height: 11rem;
+            margin-bottom: 6rem;
         }
     }
 }
