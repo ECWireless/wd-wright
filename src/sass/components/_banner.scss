@@ -78,14 +78,13 @@
             font-size: $font-medium;
         }
 
-        &:hover {
+        &:hover, {
             transform: scale(1.03);
             box-shadow: $shadow-hover;
             cursor: pointer;
 
         }
 
-        &:focus,
         &:active {
             transform: scale(1);
             background-color: $primary-color-yellow;
