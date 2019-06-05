@@ -11,13 +11,13 @@ import MapFL from '../assets/map-fl.png';
 
 export default class Map extends Component {
 	state = {
-		// button1: "map__button map__button--1",
-		// button2: "map__button map__button--2",
-		// button3: "map__button map__button--3",
-		// button4: "map__button map__button--4",
-		// button5: "map__button map__button--5",
-		// button6: "map__button map__button--6",
-		// button7: "map__button map__button--7",
+		button1: "map__button map__button--1",
+		button2: "map__button map__button--2",
+		button3: "map__button map__button--3",
+		button4: "map__button map__button--4",
+		button5: "map__button map__button--5",
+		button6: "map__button map__button--6",
+		button7: "map__button map__button--7",
 
 		map: MapOriginal,
 	}
@@ -90,6 +90,7 @@ export default class Map extends Component {
 								<div className="map__button-container">
 									<div
 										className="map__button map__button--1"
+										onClick={this.handleMapPA}
 										onMouseEnter={this.handleMapPA}
 										onMouseLeave={this.handleMapOriginal}
 									>
@@ -97,6 +98,7 @@ export default class Map extends Component {
 									</div>
 									<div
 										className="map__button map__button--2"
+										onClick={this.handleMapOH}
 										onMouseEnter={this.handleMapOH}
 										onMouseLeave={this.handleMapOriginal}
 									>
@@ -104,6 +106,7 @@ export default class Map extends Component {
 									</div>
 									<div
 										className="map__button map__button--3"
+										onClick={this.handleMapIN}
 										onMouseEnter={this.handleMapIN}
 										onMouseLeave={this.handleMapOriginal}
 									>
@@ -112,6 +115,7 @@ export default class Map extends Component {
 
 									<div
 										className="map__button map__button--4"
+										onClick={this.handleMapNY}
 										onMouseEnter={this.handleMapNY}
 										onMouseLeave={this.handleMapOriginal}
 									>
@@ -119,6 +123,7 @@ export default class Map extends Component {
 									</div>
 									<div
 										className="map__button map__button--5"
+										onClick={this.handleMapNC}
 										onMouseEnter={this.handleMapNC}
 										onMouseLeave={this.handleMapOriginal}
 									>
@@ -126,6 +131,7 @@ export default class Map extends Component {
 									</div>
 									<div
 										className="map__button map__button--6"
+										onClick={this.handleMapSC}
 										onMouseEnter={this.handleMapSC}
 										onMouseLeave={this.handleMapOriginal}
 									>
@@ -134,6 +140,7 @@ export default class Map extends Component {
 
 									<div
 										className="map__button map__button--7"
+										onClick={this.handleMapFL}
 										onMouseEnter={this.handleMapFL}
 										onMouseLeave={this.handleMapOriginal}
 									>
