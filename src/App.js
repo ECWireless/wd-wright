@@ -14,7 +14,7 @@ export default class App extends Component {
 	}
 
 	handleScroll = () => {
-		if (window.scrollY > 70) {
+		if (window.scrollY > 1) {
 		  this.setState({
 			navigation: 'navigation-fixed'
 		  })
