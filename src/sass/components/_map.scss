@@ -61,7 +61,7 @@
         &:hover {
             background-color: $primary-color-red;
             color: $color-white;
-            cursor: pointer;
+            cursor: default;
         }
 
         &--clicked {

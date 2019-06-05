@@ -3,10 +3,59 @@
     height: 8rem;
     width: 100%;
     z-index: 10;
-    position: relative;
+    position: sticky;
+    top: 0;
+
+    transition: .4s all;
 
     @include respond(phone) {
         height: 5.5rem;
+        transition: .2s all;
+    }
+
+    .logo {
+        position: relative;
+        width: 16rem;
+        top: 1.8rem;
+        z-index: 10;
+
+        @include respond(phone) {
+            width: 10rem;
+            top: .3rem;
+            left: 3rem;
+        }
+    }
+
+    .join {
+        position: relative;
+        width: 30rem;
+        top: 1rem;
+        float: right;
+        z-index: 10;
+
+        @include respond(phone) {
+            width: 16.5rem;
+            top: 1.6rem;
+            right: 3rem;
+        }
+    }
+}
+
+.navigation-fixed {
+    background-color: rgba($color: $banner-blue, $alpha: 1);
+    height: 8rem;
+    width: 100%;
+    z-index: 10;
+    position: sticky;
+    top: 0;
+    transform: scale(1.02);
+    box-shadow: $shadow-large;
+
+    transition: .4s all;
+
+    @include respond(phone) {
+        height: 5.5rem;
+        transition: .2s all;
     }
 
     .logo {

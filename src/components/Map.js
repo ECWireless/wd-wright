@@ -1,103 +1,78 @@
 import React, { Component, Fragment } from 'react';
 
-import MapPhoto from '../assets/map.png';
+import MapOriginal from '../assets/map.png';
+import MapPA from '../assets/map-pa.png';
+import MapOH from '../assets/map-oh.png';
+import MapIN from '../assets/map-in.png';
+import MapNY from '../assets/map-ny.png';
+import MapNC from '../assets/map-nc.png';
+import MapSC from '../assets/map-sc.png';
+import MapFL from '../assets/map-fl.png';
 
 export default class Map extends Component {
 	state = {
-		button1: "map__button map__button--1",
-		button2: "map__button map__button--2",
-		button3: "map__button map__button--3",
-		button4: "map__button map__button--4",
-		button5: "map__button map__button--5",
-		button6: "map__button map__button--6",
-		button7: "map__button map__button--7",
+		// button1: "map__button map__button--1",
+		// button2: "map__button map__button--2",
+		// button3: "map__button map__button--3",
+		// button4: "map__button map__button--4",
+		// button5: "map__button map__button--5",
+		// button6: "map__button map__button--6",
+		// button7: "map__button map__button--7",
+
+		map: MapOriginal,
 	}
 
-	clicked1 = () => {
+	// Map Event Handlers
+	handleMapOriginal = () => {
 		this.setState({
-			button1: "map__button map__button--1 map__button--clicked",
-			button2: "map__button map__button--2",
-			button3: "map__button map__button--3",
-			button4: "map__button map__button--4",
-			button5: "map__button map__button--5",
-			button6: "map__button map__button--6",
-			button7: "map__button map__button--7",
+			map: MapOriginal,
 		})
 	}
 
-	clicked2 = () => {
+	handleMapPA = () => {
 		this.setState({
-			button1: "map__button map__button--1",
-			button2: "map__button map__button--2 map__button--clicked",
-			button3: "map__button map__button--3",
-			button4: "map__button map__button--4",
-			button5: "map__button map__button--5",
-			button6: "map__button map__button--6",
-			button7: "map__button map__button--7",
+			map: MapPA,
 		})
 	}
 
-	clicked3 = () => {
+	handleMapOH = () => {
 		this.setState({
-			button1: "map__button map__button--1",
-			button2: "map__button map__button--2",
-			button3: "map__button map__button--3 map__button--clicked",
-			button4: "map__button map__button--4",
-			button5: "map__button map__button--5",
-			button6: "map__button map__button--6",
-			button7: "map__button map__button--7",
+			map: MapOH,
 		})
 	}
 
-	clicked4 = () => {
+	handleMapIN = () => {
 		this.setState({
-			button1: "map__button map__button--1",
-			button2: "map__button map__button--2",
-			button3: "map__button map__button--3",
-			button4: "map__button map__button--4 map__button--clicked",
-			button5: "map__button map__button--5",
-			button6: "map__button map__button--6",
-			button7: "map__button map__button--7",
+			map: MapIN,
 		})
 	}
 
-	clicked5 = () => {
+	handleMapNY = () => {
 		this.setState({
-			button1: "map__button map__button--1",
-			button2: "map__button map__button--2",
-			button3: "map__button map__button--3",
-			button4: "map__button map__button--4",
-			button5: "map__button map__button--5 map__button--clicked",
-			button6: "map__button map__button--6",
-			button7: "map__button map__button--7",
+			map: MapNY,
 		})
 	}
 
-	clicked6 = () => {
+	handleMapNC = () => {
 		this.setState({
-			button1: "map__button map__button--1",
-			button2: "map__button map__button--2",
-			button3: "map__button map__button--3",
-			button4: "map__button map__button--4",
-			button5: "map__button map__button--5",
-			button6: "map__button map__button--6 map__button--clicked",
-			button7: "map__button map__button--7",
+			map: MapNC,
 		})
 	}
 
-	clicked7 = () => {
+	handleMapSC = () => {
 		this.setState({
-			button1: "map__button map__button--1",
-			button2: "map__button map__button--2",
-			button3: "map__button map__button--3",
-			button4: "map__button map__button--4",
-			button5: "map__button map__button--5",
-			button6: "map__button map__button--6",
-			button7: "map__button map__button--7 map__button--clicked",
+			map: MapSC,
 		})
 	}
 
+	handleMapFL = () => {
+		this.setState({
+			map: MapFL,
+		})
+	}
+	
 	render() {
+
 		return (
 			<Fragment>
 				<div className="map">
@@ -106,7 +81,7 @@ export default class Map extends Component {
 						<div className="row">
 							<div className="col-1-of-2">
 								<img
-									src={MapPhoto}
+									src={this.state.map}
 									alt="Map"
 									className="map__photo"
 								/>
@@ -114,48 +89,55 @@ export default class Map extends Component {
 							<div className="col-1-of-2">
 								<div className="map__button-container">
 									<div
-										className={this.state.button1}
-										onClick={this.clicked1}
+										className="map__button map__button--1"
+										onMouseEnter={this.handleMapPA}
+										onMouseLeave={this.handleMapOriginal}
 									>
 										<div className="map__button-text">PA</div>
 									</div>
 									<div
-										className={this.state.button2}
-										onClick={this.clicked2}
+										className="map__button map__button--2"
+										onMouseEnter={this.handleMapOH}
+										onMouseLeave={this.handleMapOriginal}
 									>
 										<div className="map__button-text">OH</div>
 									</div>
 									<div
-										className={this.state.button3}
-										onClick={this.clicked3}
+										className="map__button map__button--3"
+										onMouseEnter={this.handleMapIN}
+										onMouseLeave={this.handleMapOriginal}
 									>
 										<div className="map__button-text">IN</div>
 									</div>
 
 									<div
-										className={this.state.button4}
-										onClick={this.clicked4}
+										className="map__button map__button--4"
+										onMouseEnter={this.handleMapNY}
+										onMouseLeave={this.handleMapOriginal}
 									>
-										<div className="map__button-text">PA</div>
+										<div className="map__button-text">NY</div>
 									</div>
 									<div
-										className={this.state.button5}
-										onClick={this.clicked5}
+										className="map__button map__button--5"
+										onMouseEnter={this.handleMapNC}
+										onMouseLeave={this.handleMapOriginal}
 									>
-										<div className="map__button-text">OH</div>
+										<div className="map__button-text">NC</div>
 									</div>
 									<div
-										className={this.state.button6}
-										onClick={this.clicked6}
+										className="map__button map__button--6"
+										onMouseEnter={this.handleMapSC}
+										onMouseLeave={this.handleMapOriginal}
 									>
-										<div className="map__button-text">IN</div>
+										<div className="map__button-text">SC</div>
 									</div>
 
 									<div
-										className={this.state.button7}
-										onClick={this.clicked7}
+										className="map__button map__button--7"
+										onMouseEnter={this.handleMapFL}
+										onMouseLeave={this.handleMapOriginal}
 									>
-										<div className="map__button-text">IN</div>
+										<div className="map__button-text">FL</div>
 									</div>
 								</div>
 							</div>
