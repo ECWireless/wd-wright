@@ -8,11 +8,11 @@ export default function Navigation(props) {
     return (
         <Fragment>
             <div className={props.navigation}>
-				<div className="container-ipad">
+				<div className="navigation__container">
 					<a href="/">
 						<img className="logo" src={Logo} alt="Logo"/>
+						<img className="join" src={Join} alt="Join"/>
 					</a>
-					<img className="join" src={Join} alt="Join"/>
 				</div>
 			</div>
         </Fragment>
