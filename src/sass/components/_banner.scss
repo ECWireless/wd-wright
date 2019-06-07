@@ -5,8 +5,10 @@
     top: -10rem;
 
     @include respond(phone) {
-        height: 30rem;
+        height: 80vh;
         top: -6rem;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     }
 
     &__photo {
@@ -17,7 +19,12 @@
         
 
         @include respond(phone) {
-            height: 25rem;
+            background-image: linear-gradient(
+            to right bottom, 
+            rgba($primary-color-blue, 0.8), 
+            rgba($color-white, 0.8)) , 
+            url('./assets/Blurred-bg.jpg');
+            height: 100%;
         }
     }
 
@@ -29,7 +36,7 @@
         transform: translate(-50%, -50%);
 
         @include respond(phone) {
-            top: 50%;
+            top: 30%;
         }
     }
 
@@ -55,7 +62,7 @@
         transform: translate(-50%, -50%);
 
         @include respond(phone) {
-            top: 100%;
+            top: 55%;
         }
     }
 
@@ -92,4 +99,52 @@
             box-shadow: $shadow-origin;
         }
     }
+
+    .learn-more {
+        display: none;
+
+        z-index: 1;
+        position: absolute;
+        top: 80%;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;  
+        color: $color-white;  
+
+        @include respond(phone) {
+            display: inline-block; 
+        }
+
+        &__text {
+            font-size: 2.4rem;
+        }
+
+        &__symbol {
+            transform: rotate(90deg);
+            position: relative;
+            top: -1rem;
+
+            animation: arrowBounce 5s infinite;
+
+        }
+    }
+}
+
+.ref {
+    position: relative;
+    top: -10rem;
+}
+
+@keyframes arrowBounce {
+    0% { top: -1rem; }
+
+    65% { top: -1rem; }
+    72% { top: 0px; }
+    79% { top: -1rem; }
+
+    80% { top: -1rem; }
+    87% { top: 0px; }
+    94% { top: -1rem; }
+
+    100% { top: -1rem; }
 }
