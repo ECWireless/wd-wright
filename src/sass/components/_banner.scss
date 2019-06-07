@@ -122,10 +122,11 @@
         &__symbol {
             transform: rotate(90deg);
             position: relative;
-            top: -1rem;
+            top: -2rem;
 
-            animation: arrowBounce 5s infinite;
-
+            @include respond(phone) {
+                animation: arrowBounce 5s infinite;
+            }
         }
     }
 }
@@ -136,15 +137,15 @@
 }
 
 @keyframes arrowBounce {
-    0% { top: -1rem; }
+    0% { top: -2rem; }
 
-    65% { top: -1rem; }
+    65% { top: -2rem; }
     72% { top: 0px; }
-    79% { top: -1rem; }
+    79% { top: -2rem; }
 
-    80% { top: -1rem; }
+    80% { top: -2rem; }
     87% { top: 0px; }
-    94% { top: -1rem; }
+    94% { top: -2rem; }
 
-    100% { top: -1rem; }
+    100% { top: -2rem; }
 }
