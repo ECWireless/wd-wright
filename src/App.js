@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import "scroll-behavior-polyfill";
 import './App.scss';
 
 import Banner from './components/Banner';
