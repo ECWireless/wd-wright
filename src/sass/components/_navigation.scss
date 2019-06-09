@@ -1,6 +1,6 @@
 .navigation {
     background-color: rgba($color: $color-white, $alpha: 0);
-    height: 10rem;
+    height: 7rem;
     width: 100%;
     z-index: 10;
     position: sticky;
@@ -14,53 +14,27 @@
 
     &__container {
         position: relative;
+        width: 80%;
+        margin: 0 auto;
         text-align: center;
-        top: 2rem;
+        top: .5rem;
         z-index: 10;
-
         cursor: pointer;
-    }
+        transition: .3s all;
 
-    .logo {
-        position: absolute;
-        width: 20rem;
-
-        opacity: 0;
-        transform: translate(-50%, -20px);
-
-        animation: fadeLogo 20s;
-        animation-iteration-count: infinite;
-
-        transition: .4s all;
-
-        @include respond(phone) {
-            width: 10rem;
+        &:hover {
+            transform: scale(1.02);
         }
-    }
-
-    .join {
-        position: absolute;
-        width: 40rem;
-        z-index: 10;
-        top: -1rem;
-
-        opacity: 0;
-        transform: translate(-50%, 20px);
-
-        animation: fadeJoin 20s;
-        animation-iteration-count: infinite;
-
-        transition: .4s all;
 
         @include respond(phone) {
-            width: 16.5rem;
+            top: 1.4rem;
         }
     }
 }
 
 .navigation-fixed {
     background-color: rgba($color: $color-white, $alpha: .95);
-    height: 10rem;
+    height: 7rem;
     width: 100%;
     z-index: 10;
     position: sticky;
@@ -73,52 +47,41 @@
         height: 5.5rem;
         transition: .4s all;
     }
+}
 
-    &__container {
-        position: relative;
-        text-align: center;
-        top: 1.8rem;
-        z-index: 10;
+.logo {
+    position: absolute;
+    width: 20rem;
 
-        cursor: pointer;
+    opacity: 0;
+    transform: translate(-50%, -20px);
+
+    animation: fadeLogo 20s;
+    animation-iteration-count: infinite;
+
+    transition: .4s all;
+
+    @include respond(phone) {
+        width: 10rem;
     }
+}
 
-    .logo {
-        position: absolute;
-        width: 20rem;
+.join {
+    position: absolute;
+    width: 30rem;
+    z-index: 10;
+    top: 0rem;
 
-        opacity: 0;
-        transform: translate(-50%, -20px);
+    opacity: 0;
+    transform: translate(-50%, 20px);
 
-        animation: fadeLogo 20s;
-        animation-iteration-count: infinite;
+    animation: fadeJoin 20s;
+    animation-iteration-count: infinite;
 
-        transition: .4s all;
+    transition: .4s all;
 
-        @include respond(phone) {
-            width: 10rem;
-            top: -.5rem;
-        }
-    }
-
-    .join {
-        position: absolute;
-        width: 40rem;
-        z-index: 10;
-        top: -1rem;
-
-        opacity: 0;
-        transform: translate(-50%, 20px);
-
-        animation: fadeJoin 20s;
-        animation-iteration-count: infinite;
-
-        transition: .4s all;
-
-        @include respond(phone) {
-            width: 16.5rem;
-            top: -.5rem;
-        }
+    @include respond(phone) {
+        width: 16.5rem;
     }
 }
 

@@ -1,6 +1,6 @@
 .banner {
     position: relative;
-    height: 90rem;
+    height: 99vh;
     z-index: 0;
     top: -10rem;
 
@@ -20,10 +20,10 @@
 
         @include respond(phone) {
             background-image: linear-gradient(
-            to right bottom, 
-            rgba($primary-color-blue, 0.8), 
-            rgba($color-white, 0.8)) , 
-            url('./assets/Blurred-bg.jpg');
+                to right bottom, 
+                rgba($primary-color-blue, 0.8), 
+                rgba($color-white, 0.8)) , 
+                url('./assets/Blurred-bg.jpg');
             height: 100%;
         }
     }
@@ -32,7 +32,7 @@
         position: absolute;
         z-index: 1;
         left: 50%;
-        top: 45%;
+        top: 40%;
         transform: translate(-50%, -50%);
 
         @include respond(phone) {
@@ -41,8 +41,8 @@
     }
 
     .video-size {
-        width: 640px;
-        height: 360px;
+        width: 629px;
+        height: 358px;
         border: solid 4px $primary-color-blue;
 
         transform: scale(1.1);
@@ -58,7 +58,7 @@
         z-index: 1;
         position: absolute;
         left: 50%;
-        top: 80%;
+        top: 70%;
         transform: translate(-50%, -50%);
 
         @include respond(phone) {
@@ -101,32 +101,33 @@
     }
 
     .learn-more {
-        display: none;
-
         z-index: 1;
         position: absolute;
-        top: 80%;
+        top: 85%;
         text-align: center;
         width: 100%;
         margin: 0 auto;  
-        color: $color-white;  
+        color: $color-white;
 
         @include respond(phone) {
-            display: inline-block; 
+            display: inline-block;
+            top: 80%;
         }
 
         &__text {
+            width: 20rem;
+            margin: 0 auto;
             font-size: 2.4rem;
+            cursor: pointer;
         }
 
         &__symbol {
             transform: rotate(90deg);
+            display: inline-block;
             position: relative;
             top: -2rem;
-
-            @include respond(phone) {
-                animation: arrowBounce 5s infinite;
-            }
+            cursor: pointer;
+            animation: arrowBounce 5s infinite;
         }
     }
 }
