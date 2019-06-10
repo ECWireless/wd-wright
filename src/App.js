@@ -7,7 +7,7 @@ import Map from './components/Map';
 import Navigation from './components/Navigation';
 import Perks from './components/Perks';
 import Testimonials from './components/Testimonials';
-import Videos from './components/Videos';
+import Videos from './components/Quotes';
 
 export default class App extends Component {
 	state = {

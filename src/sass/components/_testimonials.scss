@@ -134,9 +134,11 @@
     &__container {
         max-width: 100rem;
         margin: 0 auto;
+        padding-bottom: 5rem;
 
         @include respond(phone) {
             max-width: 35rem;
+            padding-bottom: 2rem;
         }
     }
 
