@@ -30,7 +30,7 @@ export default class Banner extends Component {
 						</iframe>
 					</div>
 					<div className="button-container">
-						<a href="https://www.wdwright.com/apply-online" target="_blank" rel="noopener noreferrer">
+						<a href="https://wdwright.isolvedhire.com" target="_blank" rel="noopener noreferrer">
 							<button
 								className="apply-now"
 							>

@@ -59,7 +59,7 @@ export default class App extends Component {
 				<div className={this.state.footer}>
 					<div className="footer__button-container">
 						<a
-							href="https://www.wdwright.com/apply-online"
+							href="https://wdwright.isolvedhire.com"
 							target="_blank"
 							rel="noopener noreferrer"
 						>

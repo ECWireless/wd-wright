@@ -7,11 +7,7 @@ export default function Videos() {
 				<div className="row">
 					<div className="col-1-of-2">
 						<p className="videos__heading1">Safe Communities</p>
-						<p className="videos__paragraph1">Join us if you are eager to develop your skills and apply 
-							them together to create a safe community where people play,
-							work, learn and live. And you’ll get all the training you need.
-							You will be in charge of maintaining high safety standards on
-							roadways with unpredictable motorists.
+						<p className="videos__paragraph1">"My Dad keeps neighborhoods safe."
 						</p>
 					</div>
 					<div className="col-1-of-2">
@@ -40,21 +36,16 @@ export default function Videos() {
 						</iframe>
 					</div>
 					<div className="col-1-of-2">
-						<div className="videos__heading2">CONTROL YOUR CAREER</div>
-						<p className="videos__paragraph2 margin-b-medium">We promote from within.</p>
-						<p className="videos__paragraph2">When you work hard you’ll be rewarded. You can get promoted
-							within months and earn responsibility for your work team and
-							drive a company truck.
+						<div className="videos__heading2">Not a Desk Job</div>
+						<p className="videos__paragraph2">"Rain or shine my aunt gets the job done."
 						</p>
 					</div>
 				</div>
 
 				<div className="row">
 					<div className="col-1-of-2">
-						<p className="videos__heading1 margin-t-medium">WORK FAMILY</p>
-						<p className="videos__paragraph1">You are part of a team of workers. We know it takes
-							A diverse team to build the future and we are looking
-							for all types of talent to contribute.
+						<p className="videos__heading1 margin-t-medium">Work Family</p>
+						<p className="videos__paragraph1">"My Mom's co-workers help each other. They are like a family."
 						</p>
 					</div>
 					<div className="col-1-of-2">
@@ -83,10 +74,8 @@ export default function Videos() {
 						</iframe>
 					</div>
 					<div className="col-1-of-2">
-						<div className="videos__heading3 margin-t-medium">NOT A DESK JOB</div>
-						<p className="videos__paragraph3 margin-b-medium">You can enjoy working outside and the variety of each
-new job site. No day is the same. If you pay attention and can
-handle directing a high volume of traffic, this job is made for you.
+						<div className="videos__heading3 margin-t-medium">Control Your Career</div>
+						<p className="videos__paragraph3 margin-b-medium">"The boss tells my uncle he's a good worker."
 						</p>
 					</div>
 				</div>
