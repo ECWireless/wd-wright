@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react';
+import WebHero from '../assets/Wright.mp4';
 
 export default class Banner extends Component {
 
@@ -14,23 +15,29 @@ export default class Banner extends Component {
 	}
 
 	render() {
+
 		return (
 			<Fragment>
 				<div className="banner">
 					<div className="banner__photo"/>
-					<div className="banner__video">
-						<iframe
-							className="video-size"
-							src="https://player.vimeo.com/video/338717235"
-							frameBorder="0"
-							allow="autoplay; fullscreen"
-							allowFullScreen
-							title="banner-video"
-						>
-						</iframe>
+						<div className="banner__video">
+							<iframe
+								className="video-size"
+								src="https://player.vimeo.com/video/338717235"
+								frameBorder="0"
+								allow="autoplay; fullscreen"
+								allowFullScreen
+								title="banner-video"
+							>
+							</iframe>
+						</div>
+					<div className="banner__container">
+						<video className="banner__web-hero" autoPlay loop muted>
+							<source src={WebHero} type='video/mp4' />
+						</video>
 					</div>
 					<div className="button-container">
-						<a href="https://wdwright.isolvedhire.com" target="_blank" rel="noopener noreferrer">
+						<a href="https://wdwright.isolvedhire.com/jobmap/" target="_blank" rel="noopener noreferrer">
 							<button
 								className="apply-now"
 							>
@@ -46,8 +53,8 @@ export default class Banner extends Component {
 							&#10093;
 						</div>
 					</div>
-					<div style={{position: 'relative', top: '-125px'}} ref={ (ref) => this.myRef=ref }></div>
 				</div>
+				<div style={{position: 'relative', top: '-125px'}} ref={ (ref) => this.myRef=ref }></div>
 			</Fragment>
 		)
 	}

@@ -262,20 +262,24 @@
     }
 
     &__photo-4 {
-        height: 60rem;
-        margin-left: 10rem;
+        width: 50rem;
+        height: 100%;
+        margin-left: 5rem;
+        margin-top: 7rem;
 
         @include respond(tab-land) {
-            height: 40rem;
+            width: 50rem;
+            margin-left: 0;
+            margin-top: 0rem;
         }
 
         @include respond(tab-port) {
-            height: 40rem;
+            width: 50rem;
             margin: 0 auto;
         }
 
         @include respond(phone) {
-            height: 30rem;
+            width: 30rem;
             margin: 0 auto;
         }
     }

@@ -18,11 +18,27 @@
         clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     }
 
+    &__container {
+        max-height: 75vh;
+        overflow: hidden;
+        border-bottom: solid 5px $primary-color-red;
+
+        @include respond(tab-land) {
+            display: none;
+        }
+    }
+
+    &__web-hero {
+        width: 100%;
+        background-position: center;
+    } 
+
     &__photo {
         background-image: url('./assets/Blurred-bg.jpg');
         background-size: cover;
         background-position: center;
         height: 100%;
+        display: none;
         
         @include respond(tab-land) {
             background-image: linear-gradient(
@@ -31,6 +47,7 @@
                 rgba($color-white, 0.8)) , 
                 url('./assets/Blurred-bg.jpg');
             height: 100%;
+            display: block;
         }
 
         @include respond(phone) {
@@ -49,13 +66,15 @@
         left: 50%;
         top: 40%;
         transform: translate(-50%, -50%);
+        display: none;
 
         @include respond(tab-land) {
             top: 38%;
+            display: block;
         }
 
         @include respond(phone) {
-            top: 30%;
+            top: 35%;
         }
     }
 
@@ -73,8 +92,8 @@
 
 
         @include respond(phone) {
-            width: 256px;
-            height: 144px;
+            width: 308px;
+            height: 175px;
             transform: scale(0.9);
         }
     }
@@ -83,7 +102,7 @@
         z-index: 1;
         position: absolute;
         left: 50%;
-        top: 70%;
+        top: 85%;
         transform: translate(-50%, -50%);
 
         @include respond(tab-land) {
@@ -91,7 +110,7 @@
         }
 
         @include respond(phone) {
-            top: 55%;
+            top: 60%;
         }
     }
 
@@ -132,12 +151,17 @@
     .learn-more {
         z-index: 1;
         position: relative;
-        top: -15%;
+        top: 19%;
         text-align: center;
         width: 20rem;
         margin: 0 auto;  
-        color: $color-white;
+        color: $color-black;
         cursor: pointer;
+
+        @include respond(tab-land) {
+            color: $color-white;
+            top: -20%;
+        }
 
         @include respond(phone) {
             top: -20%;

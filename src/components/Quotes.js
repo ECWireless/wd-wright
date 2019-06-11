@@ -2,7 +2,7 @@ import React, {Fragment} from 'react';
 import Kid4 from '../assets/Kid-Workers/Kid-4.png';
 import Kid5 from '../assets/Kid-Workers/Kid-5.png';
 import Kid2 from '../assets/Kid-Workers/Kid-2.png';
-import Kid1 from '../assets/Kid-Workers/Kid-1.png';
+import Kid6 from '../assets/Kid-Workers/Kid-6.png';
 
 export default function Videos() {
     return (
@@ -46,7 +46,7 @@ export default function Videos() {
 				</div>
 
 				<div className="quotes__row-4">
-					<img className="quotes__photo-4" src={Kid1} alt="kid-4"/>
+					<img className="quotes__photo-4" src={Kid6} alt="kid-4"/>
 					<div className="quotes__text-4 margin-b-medium">
 						<div className="quotes__heading4">“The boss tells my uncle he’s a good worker”</div>
 						<p className="quotes__paragraph4">You can enjoy working outside and the variety of each

@@ -140,7 +140,7 @@ export default class Testimonials extends Component {
 							}
 							onClick={this.handleClicked2}
 						>
-							<div className="testimonials__name">Photo of Hailey</div>
+							<div className="testimonials__name--2"></div>
 						</div>
 						<div
 							className={
