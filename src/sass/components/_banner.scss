@@ -4,6 +4,13 @@
     z-index: 0;
     top: -10rem;
 
+    @include respond(tab-land) {
+        height: 99vh;
+        top: -7rem;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+    }
+
     @include respond(phone) {
         height: 80vh;
         top: -6rem;
@@ -17,6 +24,14 @@
         background-position: center;
         height: 100%;
         
+        @include respond(tab-land) {
+            background-image: linear-gradient(
+                to right bottom, 
+                rgba($primary-color-blue, 0.8), 
+                rgba($color-white, 0.8)) , 
+                url('./assets/Blurred-bg.jpg');
+            height: 100%;
+        }
 
         @include respond(phone) {
             background-image: linear-gradient(
@@ -35,6 +50,10 @@
         top: 40%;
         transform: translate(-50%, -50%);
 
+        @include respond(tab-land) {
+            top: 38%;
+        }
+
         @include respond(phone) {
             top: 30%;
         }
@@ -44,8 +63,14 @@
         width: 629px;
         height: 358px;
         border: solid 4px $primary-color-blue;
-
         transform: scale(1.1);
+
+        @include respond(tab-port) {
+            width: 535px;
+            height: 304px;
+            transform: scale(0.9);
+        }
+
 
         @include respond(phone) {
             width: 256px;
@@ -60,6 +85,10 @@
         left: 50%;
         top: 70%;
         transform: translate(-50%, -50%);
+
+        @include respond(tab-land) {
+            top: 72%;
+        }
 
         @include respond(phone) {
             top: 55%;
@@ -102,23 +131,22 @@
 
     .learn-more {
         z-index: 1;
-        position: absolute;
-        top: 85%;
+        position: relative;
+        top: -15%;
         text-align: center;
-        width: 100%;
+        width: 20rem;
         margin: 0 auto;  
         color: $color-white;
+        cursor: pointer;
 
         @include respond(phone) {
-            display: inline-block;
-            top: 80%;
+            top: -20%;
         }
 
         &__text {
             width: 20rem;
             margin: 0 auto;
             font-size: 2.4rem;
-            cursor: pointer;
         }
 
         &__symbol {
@@ -126,7 +154,6 @@
             display: inline-block;
             position: relative;
             top: -2rem;
-            cursor: pointer;
             animation: arrowBounce 5s infinite;
         }
     }

@@ -2,6 +2,16 @@
     max-width: 100rem;
     margin: 0 auto;
 
+    
+
+    @include respond(tab-land) {
+        max-width: 95rem;
+    }
+
+    @include respond(tab-port) {
+        max-width: 75rem;
+    }
+
     @include respond(phone) {
         max-width: 33rem;
     }
@@ -28,6 +38,12 @@
         border: solid 5px $primary-color-red;
         border-radius: 50px;
 
+        @include respond(tab-land) {
+            width: 35rem;
+            height: 25rem;
+            margin: 0 auto;
+        }
+
         @include respond(phone) {
             width: 27rem;
             height: 18rem;
@@ -45,6 +61,22 @@
         padding: 2rem;
         margin: 4rem 3rem 3rem;
         border-radius: 20px;
+
+        @include respond(tab-land) {
+            margin: 3rem 3rem 3rem;
+            width: 26rem;
+            height: 8rem;
+            font-size: 2.4rem;
+        }
+
+        @include respond(tab-port) {
+            width: 26rem;
+            height: 7rem;
+            font-size: 2.4rem;
+            margin: 0 auto;
+            text-align: center;
+            padding: 1.5rem;
+        }
 
         @include respond(phone) {
             width: 21.5rem;
@@ -66,6 +98,21 @@
         padding: 2rem;
         margin: 3rem;
         border-radius: 20px;
+
+        @include respond(tab-land) {
+            width: 41rem;
+            height: 8rem;
+            font-size: 2.4rem;
+        }
+
+        @include respond(tab-port) {
+            width: 41rem;
+            height: 7rem;
+            font-size: 2.4rem;
+            margin: 3rem auto 0;
+            text-align: center;
+            padding: 1.5rem;
+        }
 
         @include respond(phone) {
             width: 31.5rem;
@@ -92,6 +139,15 @@
 
     &__line {
         opacity: 0;
+
+        @include respond(tab-port) {
+            opacity: 1;
+            width: 15rem;
+            margin: 0 auto;
+            border-top: solid 1px $primary-color-yellow;
+            border-left: solid 1px $primary-color-yellow;
+            margin-bottom: 4rem;
+        }
 
         @include respond(phone) {
             opacity: 1;
@@ -123,6 +179,11 @@
         height: 35rem;
         width: 100%;
         margin-bottom: 10rem;
+
+        @include respond(tab-land) {
+            height: 25rem;
+            margin-bottom: 6rem;
+        }
 
         @include respond(phone) {
             height: 11rem;

@@ -23,6 +23,19 @@
         margin: 0 auto;
         position: relative;
         margin-top: 5rem;
+        display: flex;
+        justify-content: center;
+
+        @include respond(tab-land) {
+            width: 90rem;
+            height: 20rem;
+        }
+
+        @include respond(tab-port) {
+            width: 100%;
+            height: 18rem;
+            margin-top: 3rem;
+        }
 
         @include respond(phone) {
             width: 100%;
@@ -35,13 +48,33 @@
         background-color: white;
         height: 100%;
         width: 30%;
-        float: left;
         border: solid 4px $primary-color-blue;
         transition: .2s all;
         transform: scale(.95);
 
+        @include respond(tab-land) {
+            width: 28%;
+        }
+
+        @include respond(tab-port) {
+            width: 30%;
+        }
+
+        @include respond(phone) {
+            width: 33%;
+        }
+
         &:not(:last-child) {
             margin-right: 5rem;
+
+            @include respond(tab-land) {
+                margin-right: 3rem;
+                text-align: center;
+            }
+
+            @include respond(tab-port) {
+                margin-right: 2rem;
+            }
 
             @include respond(phone) {
                 margin-right: 0;
@@ -63,10 +96,6 @@
             box-shadow: $shadow-hover;
             transform: scale(1);
         }
-
-        @include respond(phone) {
-            width: 33%;
-        }
     }
 
     &__name {
@@ -74,6 +103,16 @@
         font-size: 4.5rem;
         padding: 2.5rem 4rem 2.5rem;
         font-weight: bold;
+
+        @include respond(tab-land) {
+            font-size: 3.5rem;
+            padding: 3.5rem 4rem 2.5rem;
+        }
+
+        @include respond(tab-port) {
+            font-size: 3.5rem;
+            padding: 3rem 4rem 2.5rem;
+        }
 
         @include respond(phone) {
             font-size: 2rem;
@@ -104,10 +143,45 @@
             left: 35rem;
         }
 
+        @include respond(tab-land) {
+            width: 15rem;
+            height: 6rem;
+
+            &--left {
+                left: -28rem;
+                right: 0;
+            }
+    
+            &--center {
+                left: 0;
+            }
+    
+            &--right {
+                left: 28rem;
+            }
+        }
+
+        @include respond(tab-port) {
+            width: 8rem;
+            height: 4rem;
+
+            &--left {
+                left: -32%;
+                right: 0;
+            }
+    
+            &--center {
+                left: 0;
+            }
+    
+            &--right {
+                left: 32%;
+            }
+        }
+
         @include respond(phone) {
             width: 8rem;
             height: 4rem;
-            left: -15rem;
 
             &--left {
                 left: -33%;
@@ -135,6 +209,15 @@
         max-width: 100rem;
         margin: 0 auto;
         padding-bottom: 5rem;
+
+        @include respond(tab-land) {
+            max-width: 90rem;
+        }
+
+        @include respond(tab-port) {
+            max-width: 75rem;
+            padding-bottom: 2rem;
+        }
 
         @include respond(phone) {
             max-width: 35rem;

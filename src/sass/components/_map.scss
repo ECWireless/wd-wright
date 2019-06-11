@@ -7,7 +7,11 @@
     text-align: center;
     padding: 6rem;
 
-    @include respond(phone) {
+    @include respond(tab-port) {
+        height: 115rem;
+    }
+
+    @include respond(pone) {
         height: 100rem;
     }
 
@@ -21,6 +25,10 @@
         font-size: 4.5rem;
         margin-bottom: 6rem;
 
+        @include respond(tab-port) {
+            margin-bottom: 3rem;
+        }
+
         @include respond(phone) {
             margin-bottom: 3rem;
             font-size: 3rem;
@@ -29,6 +37,10 @@
 
     &__photo {
         height: 52.5rem;
+
+        @include respond(tab-port) {
+            height: 40rem;
+        }
 
         @include respond(phone) {
             height: 35rem;
@@ -41,6 +53,13 @@
         position: relative;
         margin-top: 8rem;
         margin-left: 6rem;
+
+        @include respond(tab-port) {
+            width: 25rem;
+            height: 25rem;
+            margin: 0 auto;
+            top: -1rem;
+        }
 
         @include respond(phone) {
             width: 25rem;
@@ -69,6 +88,12 @@
             background-color: $primary-color-red;
             color: $color-white;
         }
+
+        @include respond(tab-port) {
+            width: 7rem;
+            height: 7rem;
+            top: -1rem;
+        }
  
         @include respond(phone) {
             width: 7rem;
@@ -96,6 +121,10 @@
             position: absolute;
             top: 12rem;
 
+            @include respond(tab-port) {
+                top: 8rem;
+            }
+
             @include respond(phone) {
                 top: 9rem;
             }
@@ -106,6 +135,10 @@
             left: 50%;
             transform: translate(-50%, 0);
             top: 12rem;
+
+            @include respond(tab-port) {
+                top: 8rem;
+            }
 
             @include respond(phone) {
                 top: 9rem;
@@ -118,6 +151,10 @@
             transform: translate(-100%, 0);
             top: 12rem;
 
+            @include respond(tab-port) {
+                top: 8rem;
+            }
+
             @include respond(phone) {
                 top: 9rem;
             }
@@ -128,6 +165,10 @@
             left: 50%;
             transform: translate(-50%, 0);
             top: 24rem;
+
+            @include respond(tab-port) {
+                top: 17rem;
+            }
 
             @include respond(phone) {
                 top: 18rem;
@@ -141,7 +182,7 @@
         top: 1.2rem;
         font-weight: bold;
 
-        @include respond(phone) {
+        @include respond(tab-port) {
             font-size: 2.8rem;
             top: 1.4rem;
         }

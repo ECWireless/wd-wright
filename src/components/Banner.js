@@ -38,15 +38,15 @@ export default class Banner extends Component {
 							</button>
 						</a>
 					</div>
-					<div className="learn-more">
-						<div className="learn-more__text" onClick={this.handleScroll}>
+					<div className="learn-more" onClick={this.handleScroll}>
+						<div className="learn-more__text">
 							Learn More
 						</div>
-						<div className="learn-more__symbol" onClick={this.handleScroll}>
+						<div className="learn-more__symbol">
 							&#10093;
 						</div>
 					</div>
-					<div style={{position: 'relative', top: '-40px'}} ref={ (ref) => this.myRef=ref }></div>
+					<div style={{position: 'relative', top: '-125px'}} ref={ (ref) => this.myRef=ref }></div>
 				</div>
 			</Fragment>
 		)

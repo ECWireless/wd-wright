@@ -3,11 +3,12 @@ import "scroll-behavior-polyfill";
 import './App.scss';
 
 import Banner from './components/Banner';
+import Footer from './components/Footer';
 import Map from './components/Map';
 import Navigation from './components/Navigation';
 import Perks from './components/Perks';
+import Quotes from './components/Quotes';
 import Testimonials from './components/Testimonials';
-import Videos from './components/Quotes';
 
 export default class App extends Component {
 	state = {
@@ -53,24 +54,10 @@ export default class App extends Component {
 				<Navigation navigation={this.state.navigation} />
 				<Banner />
 				<Perks />
-				<Videos />
+				<Quotes />
 				<Map />
 				<Testimonials />
-				<div className={this.state.footer}>
-					<div className="footer__button-container">
-						<a
-							href="https://wdwright.isolvedhire.com"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							<button
-								className="footer__apply-now"
-							>
-								Apply Now!
-							</button>
-						</a>
-					</div>
-				</div>
+				<Footer footer={this.state.footer} />
 			</div>
 		);
 	}
