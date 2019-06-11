@@ -11,7 +11,7 @@
         height: 115rem;
     }
 
-    @include respond(pone) {
+    @include respond(phone) {
         height: 100rem;
     }
 
