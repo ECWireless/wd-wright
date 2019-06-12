@@ -14,6 +14,7 @@ export default class App extends Component {
 	state = {
 		navigation: 'navigation',
 		footer: 'footer',
+		myRef: null,
 	}
 
 	componentDidMount() {
@@ -52,7 +53,9 @@ export default class App extends Component {
 		return (
 			<div className="App" >
 				<Navigation navigation={this.state.navigation} />
-				<Banner />
+				<Banner myRef={this.myRef} />
+
+				<div style={{position: 'relative', top: '-100px'}} ref={ (ref) => this.myRef=ref }></div>
 				<Perks />
 				<Quotes />
 				<Map />

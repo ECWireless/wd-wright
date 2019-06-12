@@ -3,13 +3,10 @@ import WebHero from '../assets/Wright.mp4';
 
 export default class Banner extends Component {
 
-	state = {
-		myRef: null,
-	}
 
 	handleScroll = () => {
 		window.scrollTo({
-			top: this.myRef.offsetTop,
+			top: this.props.myRef.offsetTop,
 			behavior: 'smooth'
 		});
 	}
@@ -54,7 +51,6 @@ export default class Banner extends Component {
 						</div>
 					</div>
 				</div>
-				<div style={{position: 'relative', top: '-125px'}} ref={ (ref) => this.myRef=ref }></div>
 			</Fragment>
 		)
 	}
