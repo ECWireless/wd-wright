@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import WebHero from '../assets/Wright.mp4';
+import WebHero from '../assets/Banner/Wright-small-2.mp4';
 
 export default class Banner extends Component {
 

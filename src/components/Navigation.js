@@ -1,7 +1,8 @@
 import React, { Component, Fragment } from 'react';
 
-import Logo from '../assets/Wright-Logo.png';
-import Join from '../assets/Join-Banner.png';
+import Logo2x from '../assets/Navigation/Wright-Logo-2x.png';
+import Logo1x from '../assets/Navigation/Wright-Logo-1x.png';
+import Join from '../assets/Navigation/Join-Banner-2x.png';
 
 export default class Navigation extends Component {
 
@@ -17,8 +18,14 @@ export default class Navigation extends Component {
 			<Fragment>
 				<div className={this.props.navigation}>
 					<div className="navigation__container" onClick={this.handleScrollToTop}>
-							<img className="logo" src={Logo} alt="Logo"/>
-							<img className="join" src={Join} alt="Join"/>
+						<img
+							srcSet={`${Logo1x} 481w, ${Logo2x} 962w`}
+							sizes="(max-width: 900px) 20vw, (max-width: 600px) 15vw, 200px"
+							alt="Logo"
+							className="logo"
+							src={Logo2x}
+						/>
+						<img className="join" src={Join} alt="Join"/>
 					</div>
 				</div>
 			</Fragment>

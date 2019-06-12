@@ -43,7 +43,7 @@
     } 
 
     &__photo {
-        background-image: url('./assets/Blurred-bg.jpg');
+        background-image: url('./assets/Banner/Blurred-bg.jpg');
         background-size: cover;
         background-position: center;
         height: 100%;
@@ -54,7 +54,7 @@
                 to right bottom, 
                 rgba($primary-color-blue, 0.8), 
                 rgba($color-white, 0.8)) , 
-                url('./assets/Blurred-bg.jpg');
+                url('./assets/Banner/Blurred-bg.jpg');
             height: 100%;
             display: block;
         }
@@ -64,7 +64,7 @@
                 to right bottom, 
                 rgba($primary-color-blue, 0.8), 
                 rgba($color-white, 0.8)) , 
-                url('./assets/Blurred-bg.jpg');
+                url('./assets/Banner/Blurred-bg.jpg');
             height: 100%;
         }
     }

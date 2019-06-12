@@ -1,13 +1,22 @@
 import React, { Component, Fragment } from 'react';
 
-import MapOriginal from '../assets/map.png';
-import MapPA from '../assets/map-pa.png';
-import MapOH from '../assets/map-oh.png';
-import MapIN from '../assets/map-in.png';
-import MapNY from '../assets/map-ny.png';
-import MapNC from '../assets/map-nc.png';
-import MapSC from '../assets/map-sc.png';
-import MapFL from '../assets/map-fl.png';
+import MapOriginal from '../assets/Maps/map.png';
+import MapPA from '../assets/Maps/map-pa.png';
+import MapOH from '../assets/Maps/map-oh.png';
+import MapIN from '../assets/Maps/map-in.png';
+import MapNY from '../assets/Maps/map-ny.png';
+import MapNC from '../assets/Maps/map-nc.png';
+import MapSC from '../assets/Maps/map-sc.png';
+import MapFL from '../assets/Maps/map-fl.png';
+
+import MapOriginal1x from '../assets/Maps/Small/map-1x.png';
+import MapPA1x from '../assets/Maps/Small/map-pa-1x.png';
+import MapOH1x from '../assets/Maps/Small/map-oh-1x.png';
+import MapIN1x from '../assets/Maps/Small/map-in-1x.png';
+import MapNY1x from '../assets/Maps/Small/map-ny-1x.png';
+import MapNC1x from '../assets/Maps/Small/map-nc-1x.png';
+import MapSC1x from '../assets/Maps/Small/map-sc-1x.png';
+import MapFL1x from '../assets/Maps/Small/map-fl-1x.png';
 
 export default class Map extends Component {
 	state = {
@@ -20,54 +29,63 @@ export default class Map extends Component {
 		button7: "map__button map__button--7",
 
 		map: MapOriginal,
+		mapSmall: MapOriginal1x,
 	}
 
 	// Map Event Handlers
 	handleMapOriginal = () => {
 		this.setState({
 			map: MapOriginal,
+			mapSmall: MapOriginal1x,
 		})
 	}
 
 	handleMapPA = () => {
 		this.setState({
 			map: MapPA,
+			mapSmall: MapPA1x,
 		})
 	}
 
 	handleMapOH = () => {
 		this.setState({
 			map: MapOH,
+			mapSmall: MapOH1x,
 		})
 	}
 
 	handleMapIN = () => {
 		this.setState({
 			map: MapIN,
+			mapSmall: MapIN1x,
 		})
 	}
 
 	handleMapNY = () => {
 		this.setState({
 			map: MapNY,
+			mapSmall: MapNY1x,
 		})
 	}
 
 	handleMapNC = () => {
 		this.setState({
 			map: MapNC,
+			mapSmall: MapNC1x,
 		})
 	}
 
 	handleMapSC = () => {
 		this.setState({
 			map: MapSC,
+			mapSmall: MapSC1x,
 		})
 	}
 
 	handleMapFL = () => {
 		this.setState({
 			map: MapFL,
+			mapSmall: MapFL1x,
 		})
 	}
 	
@@ -81,7 +99,7 @@ export default class Map extends Component {
 						<div className="row">
 							<div className="col-1-of-2">
 								<img
-									src={this.state.map}
+									srcSet={`${this.state.mapSmall} 1x, ${this.state.map} 2x`}
 									alt="Map"
 									className="map__photo"
 								/>

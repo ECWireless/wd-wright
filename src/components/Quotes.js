@@ -1,8 +1,16 @@
 import React, {Fragment} from 'react';
-import Kid4 from '../assets/Kid-Workers/Kid-4.png';
-import Kid5 from '../assets/Kid-Workers/Kid-5.png';
-import Kid2 from '../assets/Kid-Workers/Kid-2.png';
-import Kid6 from '../assets/Kid-Workers/Kid-6.png';
+
+// 2x Density
+import Kid1 from '../assets/Kid-Workers/Medium/Kid-4-2x.png';
+import Kid2 from '../assets/Kid-Workers/Medium/Kid-2-2x.png';
+import Kid3 from '../assets/Kid-Workers/Medium/Kid-5-2x.png';
+import Kid4 from '../assets/Kid-Workers/Medium/Kid-6-2x.png';
+
+// 1x Density
+import Kid1Small from '../assets/Kid-Workers/Small/Kid-4-1x.png';
+import Kid2Small from '../assets/Kid-Workers/Small/Kid-2-1x.png';
+import Kid3Small from '../assets/Kid-Workers/Small/Kid-5-1x.png';
+import Kid4Small from '../assets/Kid-Workers/Small/Kid-6-1x.png';
 
 export default function Videos() {
     return (
@@ -18,11 +26,23 @@ export default function Videos() {
 							roadways with unpredictable motorists.
 						</p>
 					</div>
-					<img className="quotes__photo-1" src={Kid4} alt="kid-1"/>
+					<img
+						srcSet={`${Kid1Small} 465w, ${Kid1} 930w`}
+						sizes="(max-width: 1200px) 27vw,(max-width: 900px) 29vw, (max-width: 600px) 31vw, 465px"
+						alt="kid-worker-1"
+						className="quotes__photo-1"
+						src={Kid1}
+					/>
 				</div>
 
 				<div className="quotes__row-2 margin-b-large">
-					<img className="quotes__photo-2" src={Kid2} alt="kid-2"/>
+					<img
+						srcSet={`${Kid2Small} 327w, ${Kid2} 654w`}
+						sizes="(max-width: 1200px) 10vw, (max-width: 900px) 14vw, (max-width: 600px) 16vw, 250px"
+						alt="kid-worker-2"
+						className="quotes__photo-2" 
+						src={Kid2}
+					/>
 
 					<div className="quotes__text-2 margin-b-medium">
 						<div className="quotes__heading2">“Rain or shine my aunt gets the job done”</div>
@@ -42,11 +62,23 @@ export default function Videos() {
 							for all types of talent to contribute.
 						</p>
 					</div>
-					<img className="quotes__photo-3" src={Kid5} alt="kid-3"/>
+					<img
+						srcSet={`${Kid3Small} 509w, ${Kid3} 1017w`}
+						sizes="(max-width: 1200px) 20vw, (max-width: 900px) 27vw, (max-width: 600px) 30vw, 502px"
+						alt="kid-worker-3"
+						className="quotes__photo-3"
+						src={Kid3}
+					/>
 				</div>
 
 				<div className="quotes__row-4">
-					<img className="quotes__photo-4" src={Kid6} alt="kid-4"/>
+					<img
+						srcSet={`${Kid4Small} 600w, ${Kid4} 1200w`}
+						sizes="(max-width: 1200px) 38vw, (max-width: 900px) 50vw, (max-width: 600px) 45vw, 500px"
+						alt="kid-worker-4"
+						className="quotes__photo-4"
+						src={Kid4}
+					/>
 					<div className="quotes__text-4 margin-b-medium">
 						<div className="quotes__heading4">“The boss tells my uncle he’s a good worker”</div>
 						<p className="quotes__paragraph4">You can enjoy working outside and the variety of each
