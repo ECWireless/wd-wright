@@ -9,8 +9,9 @@
 
     transition: .4s all;
 
-    @include respond(tab-phone) {
+    @include respond(tab-land) {
         background-color: rgba($color: $color-white, $alpha: 0);
+        box-shadow: none;
     }
 
     @include respond(phone) {
