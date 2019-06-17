@@ -152,14 +152,18 @@
     }
 
     &__triangle {
-        background-color: $color-grey;
-        width: 20rem;
-        height: 8.5rem;
-        -webkit-clip-path: polygon(0% 87%, 50% 0%, 50% 0%, 100% 87%);
-        clip-path: polygon(0% 87%, 50% 0%, 50% 0%, 100% 87%);
-        position: relative;
-        margin: 0 auto;
-        margin-bottom: -1.5rem;
+        height: 5rem;
+
+        @supports (-webkit-clip-path: polygon(0% 87%, 50% 0%, 50% 0%, 100% 87%)) or (clip-path: polygon(0% 87%, 50% 0%, 50% 0%, 100% 87%)) {
+            -webkit-clip-path: polygon(0% 87%, 50% 0%, 50% 0%, 100% 87%);
+            clip-path: polygon(0% 87%, 50% 0%, 50% 0%, 100% 87%);
+            background-color: $color-grey;
+            width: 20rem;
+            height: 8.5rem;
+            position: relative;
+            margin: 0 auto;
+            margin-bottom: -1.5rem;
+        }
 
         &--left {
             left: -35rem;
