@@ -20,7 +20,7 @@ export default class Navigation extends Component {
 					<div className="navigation__container" onClick={this.handleScrollToTop}>
 						<img
 							srcSet={`${Logo1x} 481w, ${Logo2x} 962w`}
-							sizes="(max-width: 900px) 20vw, (max-width: 600px) 15vw, 200px"
+							sizes="(max-width: 56.25) 20vw, (max-width: 37.5em) 15vw, 200px"
 							alt="Logo"
 							className="logo"
 							src={Logo2x}

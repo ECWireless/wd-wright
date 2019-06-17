@@ -125,10 +125,15 @@
         font-size: 4.5rem;
         padding: 2.5rem 4rem 2.5rem;
         font-weight: bold;
-        background-image: url('./assets/Testimonials/Hailey.jpg');
+        background-image: url('./assets/Testimonials/Hailey-1x.jpg');
         background-position: center 30%;
         background-size: cover;
         height: 100%;
+
+        @media (min-resolution: 192dpi) and (min-width: 37.5em),
+                (min-width: 125em) {
+                    background-image: url('./assets/Testimonials/Hailey-2x.jpg');
+        }
 
         @include respond(tab-land) {
             font-size: 3.5rem;

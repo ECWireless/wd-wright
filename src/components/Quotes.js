@@ -28,7 +28,7 @@ export default function Videos() {
 					</div>
 					<img
 						srcSet={`${Kid1Small} 465w, ${Kid1} 930w`}
-						sizes="(max-width: 1200px) 27vw,(max-width: 900px) 29vw, (max-width: 600px) 31vw, 465px"
+						sizes="(max-width: 75em) 27vw,(max-width: 56.25em) 29vw, (max-width: 37.5em) 31vw, 465px"
 						alt="kid-worker-1"
 						className="quotes__photo-1"
 						src={Kid1}
@@ -38,7 +38,7 @@ export default function Videos() {
 				<div className="quotes__row-2 margin-b-large">
 					<img
 						srcSet={`${Kid2Small} 327w, ${Kid2} 654w`}
-						sizes="(max-width: 1200px) 10vw, (max-width: 900px) 14vw, (max-width: 600px) 16vw, 250px"
+						sizes="(max-width: 75em) 10vw, (max-width: 56.25em) 14vw, (max-width: 37.5em) 16vw, 250px"
 						alt="kid-worker-2"
 						className="quotes__photo-2" 
 						src={Kid2}
@@ -64,7 +64,7 @@ export default function Videos() {
 					</div>
 					<img
 						srcSet={`${Kid3Small} 509w, ${Kid3} 1017w`}
-						sizes="(max-width: 1200px) 20vw, (max-width: 900px) 27vw, (max-width: 600px) 30vw, 502px"
+						sizes="(max-width: 75em) 20vw, (max-width: 56.25em) 27vw, (max-width: 37.5em) 30vw, 502px"
 						alt="kid-worker-3"
 						className="quotes__photo-3"
 						src={Kid3}
@@ -74,7 +74,7 @@ export default function Videos() {
 				<div className="quotes__row-4">
 					<img
 						srcSet={`${Kid4Small} 600w, ${Kid4} 1200w`}
-						sizes="(max-width: 1200px) 38vw, (max-width: 900px) 50vw, (max-width: 600px) 45vw, 500px"
+						sizes="(max-width: 75em) 38vw, (max-width: 56.25em) 50vw, (max-width: 37.5em) 45vw, 500px"
 						alt="kid-worker-4"
 						className="quotes__photo-4"
 						src={Kid4}

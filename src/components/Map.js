@@ -99,9 +99,11 @@ export default class Map extends Component {
 						<div className="row">
 							<div className="col-1-of-2">
 								<img
-									srcSet={`${this.state.mapSmall} 1x, ${this.state.map} 2x`}
+									srcSet={`${this.state.mapSmall} 350w, ${this.state.map} 700w`}
+									sizes="(max-width: 75em) 31vw, (max-width: 56.25em) 31vw, (max-width: 37.5em) 41vw, 490px"
 									alt="Map"
 									className="map__photo"
+									src={this.state.mapSmall}
 								/>
 							</div>
 							<div className="col-1-of-2">
