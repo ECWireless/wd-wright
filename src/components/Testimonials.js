@@ -41,7 +41,7 @@ export default class Testimonials extends Component {
 		
 		if (this.state.clicked1) {
 			testimonial = (
-				<Fragment>
+				<div className={this.state.clicked1 ? "testimonial-fade-1" : ""}>
 					<div className="testimonials__heading2">What Rick Wants You to Know:</div>
 					<p className="testimonials__paragraph">"I started working at Wright in 2007.</p>
 
@@ -61,11 +61,11 @@ export default class Testimonials extends Component {
 						I give them 150%, and I was rewarded.</p>
 
 					<p className="testimonials__paragraph">We are growing and there is plenty of room for more workers."</p>
-				</Fragment>
+				</div>
 			);
 		} else if (this.state.clicked2) {
 			testimonial = (
-				<Fragment>
+				<div className={this.state.clicked2 ? "testimonial-fade-2" : ""}>
 					<div className="testimonials__heading2">What Hailey Wants You To Know:</div>
 					<p className="testimonials__paragraph">“I started as a flagger in 2017. I had prior experience in traffic control and enjoyed that line of work. 
 						I like being outside and interacting with so many different people. 
@@ -93,11 +93,11 @@ export default class Testimonials extends Component {
 					</p>
 
 					<p className="testimonials__paragraph">We are growing and there is plenty of room for more workers."</p>
-				</Fragment>
+				</div>
 			);
 		} else {
 			testimonial = (
-				<Fragment>
+				<div className={this.state.clicked3 ? "testimonial-fade-3" : ""}>
 					<div className="testimonials__heading2">What Chris Wants You to Know:</div>
 					<p className="testimonials__paragraph">“I worked in construction before joining Wright as a flagger and I love being outside.
 						Everyone knows the flagger in the field. I believe we have a better product/service than our
@@ -113,7 +113,7 @@ export default class Testimonials extends Component {
 						Our motto is to support each other and do the best we can. 
 						If you don’t want to give 100% to this job, you need not apply.” 
 					</p>
-				</Fragment>
+				</div>
 			);
 		}
 
