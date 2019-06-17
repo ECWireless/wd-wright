@@ -288,6 +288,7 @@
         margin-top: 25rem;
         margin-right: 5rem;
         padding-left: 5rem;
+        width: 60rem;
 
         @include respond(tab-land) {
             margin-top: 10rem;
@@ -298,11 +299,13 @@
         @include respond(tab-port) {
             margin: 5rem auto 0;
             padding: 0;
+            width: 67.5rem;
         }
 
         @include respond(phone) {
             margin: 0;
             padding: 0;
+            width: 35rem;
         }
     }
 
