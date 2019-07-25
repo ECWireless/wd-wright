@@ -35,10 +35,12 @@
 
         @include respond(tab-land) {
             height: 40rem;
+            width: auto;
         }
 
         @include respond(tab-port) {
             height: 40rem;
+            width: auto;
             margin: 0 auto;
         }
 
@@ -112,10 +114,12 @@
 
         @include respond(tab-land) {
             height: 40rem;
+            width: auto;
         }
 
-        @include respond(tab-land) {
+        @include respond(tab-port) {
             height: 40rem;
+            width: auto;
             margin: 0 auto;
         }
 
