@@ -6,6 +6,15 @@
     box-sizing: inherit;
 }
 
+::selection {
+    background: #DA3731;
+    color: white;
+}
+::-moz-selection {
+    background: #DA3731;
+    color: white;
+}
+
 html {
     font-size: 62.5%;
 
