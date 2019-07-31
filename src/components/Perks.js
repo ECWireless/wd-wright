@@ -1,10 +1,10 @@
 import React, {Fragment} from 'react';
 
-export default function Perks() {
+export default function Perks(props) {
     return (
         <Fragment>
             <div className="perks">
-				<div className="perks__heading1">We are looking for individuals who are ready to start a career or start on a new career path.</div>
+				<div className="perks__heading1">{props.perksheading1}</div>
 				<div className="row">
 					<div className="col-1-of-2">
 						<div className="center perks__construction-photo"></div>

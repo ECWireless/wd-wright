@@ -10,15 +10,30 @@ import Perks from './components/Perks';
 import Quotes from './components/Quotes';
 import Testimonials from './components/Testimonials';
 
+const root = 'https://wdtest.studiome.me/wp-json/wp/v2/pages/14';
+
 export default class App extends Component {
 	state = {
 		navigation: 'navigation',
 		footer: 'footer',
 		myRef: null,
+		test: "Test"
 	}
 
 	componentDidMount() {
 		this.handleFooter();
+
+		return fetch(root, {
+			cache: "reload"
+		})
+		.then(response => response.json())
+		.then(responseJson => {
+            let perksHeading1 = responseJson.acf.perks.perks_heading_1;
+			
+			this.setState({
+                perksHeading1
+            })
+        })
 	}
 
 	handleScroll = () => {
@@ -46,6 +61,8 @@ export default class App extends Component {
 	}
 
 	render() {
+
+		console.log(this.state.perksHeading1)
 		
 		window.addEventListener('scroll', this.handleScroll);
 		window.addEventListener('scroll', this.handleFooter);
@@ -56,7 +73,7 @@ export default class App extends Component {
 				<Banner myRef={this.myRef} />
 
 				<div style={{position: 'relative', top: '-100px'}} ref={ (ref) => this.myRef=ref }></div>
-				<Perks />
+				<Perks perksheading1={this.state.perksHeading1} />
 				<Quotes />
 				<Map />
 				<Testimonials />
