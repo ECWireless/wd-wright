@@ -20,7 +20,7 @@ export default class Banner extends Component {
 						<div className="banner__video">
 							<iframe
 								className="video-size"
-								src="https://player.vimeo.com/video/338717235"
+								src={this.props.bannerVideoUrl}
 								frameBorder="0"
 								allow="autoplay; fullscreen"
 								allowFullScreen
@@ -34,7 +34,7 @@ export default class Banner extends Component {
 						</video>
 					</div>
 					<div className="button-container">
-						<a href="https://wdwright.isolvedhire.com/jobmap/" target="_blank" rel="noopener noreferrer">
+						<a href={this.props.bannerButtonUrl} target="_blank" rel="noopener noreferrer">
 							<button
 								className="apply-now"
 							>

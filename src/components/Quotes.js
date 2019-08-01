@@ -1,66 +1,52 @@
 import React, {Fragment} from 'react';
 
 // 2x Density
-import Kid1 from '../assets/Kid-Workers/Medium/Kid-4-2x.png';
-import Kid2 from '../assets/Kid-Workers/Medium/Kid-2-2x.png';
 import Kid3 from '../assets/Kid-Workers/Medium/Kid-5-2x.png';
 import Kid4 from '../assets/Kid-Workers/Medium/Kid-6-2x.png';
 
 // 1x Density
-import Kid1Small from '../assets/Kid-Workers/Small/Kid-4-1x.png';
-import Kid2Small from '../assets/Kid-Workers/Small/Kid-2-1x.png';
 import Kid3Small from '../assets/Kid-Workers/Small/Kid-5-1x.png';
 import Kid4Small from '../assets/Kid-Workers/Small/Kid-6-1x.png';
 
-export default function Videos() {
+export default function Videos(props) {
+
     return (
         <Fragment>
             <div className="quotes">
 				<div className="quotes__row-1 margin-b-large">
 					<div className="quotes__text-1 margin-b-medium">
-						<p className="quotes__heading1">"My Dad keeps neighborhoods safe"</p>
-						<p className="quotes__paragraph1">Join us if you are eager to develop your skills and apply 
-							them together to create a safe community where people play,
-							work, learn and live. And you’ll get all the training you need.
-							You will be in charge of maintaining high safety standards on
-							roadways with unpredictable motorists.
-						</p>
+						<p className="quotes__heading1">{props.quotesHeading1}</p>
+						<p className="quotes__paragraph1">{props.quotesParagraph1}</p>
 					</div>
 					<img
-						srcSet={`${Kid1Small} 465w, ${Kid1} 930w`}
+						srcSet={`${props.quotesPhoto1Small} 465w, ${props.quotesPhoto1} 930w`}
 						sizes="(max-width: 75em) 27vw,(max-width: 56.25em) 29vw, (max-width: 37.5em) 31vw, 465px"
 						alt="kid-worker-1"
 						className="quotes__photo-1"
-						src={Kid1}
+						src={props.quotesPhoto1}
 					/>
 				</div>
 
 				<div className="quotes__row-2 margin-b-large">
 					<img
-						srcSet={`${Kid2Small} 327w, ${Kid2} 654w`}
+						srcSet={`${props.quotesPhoto2Small} 327w, ${props.quotesPhoto2} 654w`}
 						sizes="(max-width: 75em) 13vw, (max-width: 56.25em) 14vw, (max-width: 37.5em) 16vw, 250px"
 						alt="kid-worker-2"
 						className="quotes__photo-2" 
-						src={Kid2}
+						src={props.quotesPhoto2}
 					/>
 
 					<div className="quotes__text-2 margin-b-medium">
-						<div className="quotes__heading2">“Rain or shine my aunt gets the job done”</div>
-						<p className="quotes__paragraph2 margin-b-medium">We promote from within.</p>
-						<p className="quotes__paragraph2">When you work hard you’ll be rewarded. You can get promoted
-							within months and earn responsibility for your work team and
-							drive a company truck.
-						</p>
+						<div className="quotes__heading2">{props.quotesHeading2}</div>
+						<p className="quotes__paragraph2 margin-b-medium">{props.quotesParagraph2_1}</p>
+						<p className="quotes__paragraph2">{props.quotesParagraph2_2}</p>
 					</div>
 				</div>
 
 				<div className="quotes__row-3 margin-b-large">
 					<div className="quotes__text-3 margin-b-medium">
-						<p className="quotes__heading3">“My Mom’s co-workers help each other. They are like a family”</p>
-						<p className="quotes__paragraph3">You are part of a team of workers. We know it takes
-							A diverse team to build the future and we are looking
-							for all types of talent to contribute.
-						</p>
+						<p className="quotes__heading3">{props.quotesHeading2}</p>
+						<p className="quotes__paragraph3">{props.quotesParagraph3}</p>
 					</div>
 					<img
 						srcSet={`${Kid3Small} 509w, ${Kid3} 1017w`}
@@ -80,11 +66,8 @@ export default function Videos() {
 						src={Kid4}
 					/>
 					<div className="quotes__text-4 margin-b-medium">
-						<div className="quotes__heading4">“The boss tells my uncle he’s a good worker”</div>
-						<p className="quotes__paragraph4">You can enjoy working outside and the variety of each
-							new job site. No day is the same. If you pay attention and can
-							handle directing a high volume of traffic, this job is made for you.
-						</p>
+						<div className="quotes__heading4">{props.quotesHeading4}</div>
+						<p className="quotes__paragraph4">{props.quotesParagraph4}</p>
 					</div>
 				</div>
 			</div>
