@@ -60,6 +60,35 @@ export default class App extends Component {
 			let quotesParagraph4 = responseJson.acf.quotes.quotes_paragraph_4;
 			let quotesPhoto4 = responseJson.acf.quotes.quotes_photo_4.url;
 			let quotesPhoto4Small = responseJson.acf.quotes.quotes_photo_4_small.url;
+
+			// Map
+			let mapHeading = responseJson.acf.map.map_heading;
+			let mapParagraph1 = responseJson.acf.map.map_paragraph_1;
+			let mapParagraph2 = responseJson.acf.map.map_paragraph_2;
+
+			// Testimonial
+			let testimonialsHailey = responseJson.acf.testimonials.testimonial_hailey.url;
+			let testimonialsHeading = responseJson.acf.testimonials.testimonials_heading;
+
+			let testimonialsRickHeading = responseJson.acf.testimonials.testimonials_rick_heading;
+			let testimonialsRickParagraph1 = responseJson.acf.testimonials.testimonials_paragraph_rick_1;
+			let testimonialsRickParagraph2 = responseJson.acf.testimonials.testimonials_paragraph_rick_2;
+			let testimonialsRickParagraph3 = responseJson.acf.testimonials.testimonials_paragraph_rick_3;
+			let testimonialsRickParagraph4 = responseJson.acf.testimonials.testimonials_paragraph_rick_4;
+			let testimonialsRickParagraph5 = responseJson.acf.testimonials.testimonials_paragraph_rick_5;
+			let testimonialsRickParagraph6 = responseJson.acf.testimonials.testimonials_paragraph_rick_6;
+
+			let testimonialsHaileyHeading = responseJson.acf.testimonials.testimonials_hailey_heading;
+			let testimonialsHaileyParagraph1 = responseJson.acf.testimonials.testimonials_paragraph_hailey_1;
+			let testimonialsHaileyParagraph2 = responseJson.acf.testimonials.testimonials_paragraph_hailey_2;
+			let testimonialsHaileyParagraph3 = responseJson.acf.testimonials.testimonials_paragraph_hailey_3;
+			let testimonialsHaileyParagraph4 = responseJson.acf.testimonials.testimonials_paragraph_hailey_4;
+			let testimonialsHaileyParagraph5 = responseJson.acf.testimonials.testimonials_paragraph_hailey_5;
+
+			let testimonialsChrisHeading = responseJson.acf.testimonials.testimonials_chris_heading;
+			let testimonialsChrisParagraph1 = responseJson.acf.testimonials.testimonials_paragraph_chris_1;
+			let testimonialsChrisParagraph2 = responseJson.acf.testimonials.testimonials_paragraph_chris_2;
+			let testimonialsChrisParagraph3 = responseJson.acf.testimonials.testimonials_paragraph_chris_3;
 			
 			this.setState({
 				// Banner
@@ -94,6 +123,35 @@ export default class App extends Component {
 				quotesParagraph4,
 				quotesPhoto4,
 				quotesPhoto4Small,
+
+				// Map
+				mapHeading,
+				mapParagraph1,
+				mapParagraph2,
+
+				// Testimonial
+				testimonialsHailey,
+				testimonialsHeading,
+
+				testimonialsRickHeading,
+				testimonialsRickParagraph1,
+				testimonialsRickParagraph2,
+				testimonialsRickParagraph3,
+				testimonialsRickParagraph4,
+				testimonialsRickParagraph5,
+				testimonialsRickParagraph6,
+
+				testimonialsHaileyHeading,
+				testimonialsHaileyParagraph1,
+				testimonialsHaileyParagraph2,
+				testimonialsHaileyParagraph3,
+				testimonialsHaileyParagraph4,
+				testimonialsHaileyParagraph5,
+
+				testimonialsChrisHeading,
+				testimonialsChrisParagraph1,
+				testimonialsChrisParagraph2,
+				testimonialsChrisParagraph3,
             })
         })
 	}
@@ -166,8 +224,35 @@ export default class App extends Component {
 					quotesPhoto4={this.state.quotesPhoto4}
 					quotesPhoto4Small={this.state.quotesPhoto4Small}
 				/>
-				<Map />
-				<Testimonials />
+				<Map
+					mapHeading={this.state.mapHeading}
+					mapParagraph1={this.state.mapParagraph1}
+					mapParagraph2={this.state.mapParagraph2}
+				/>
+				<Testimonials
+					hailey={this.state.testimonialsHailey}
+					testimonialsHeading={this.state.testimonialsHeading}
+
+					testimonialsRickHeading={this.state.testimonialsRickHeading}
+					testimonialsRickParagraph1={this.state.testimonialsRickParagraph1}
+					testimonialsRickParagraph2={this.state.testimonialsRickParagraph2}
+					testimonialsRickParagraph3={this.state.testimonialsRickParagraph3}
+					testimonialsRickParagraph4={this.state.testimonialsRickParagraph4}
+					testimonialsRickParagraph5={this.state.testimonialsRickParagraph5}
+					testimonialsRickParagraph6={this.state.testimonialsRickParagraph6}
+
+					testimonialsHaileyHeading={this.state.testimonialsHaileyHeading}
+					testimonialsHaileyParagraph1={this.state.testimonialsHaileyParagraph1}
+					testimonialsHaileyParagraph2={this.state.testimonialsHaileyParagraph2}
+					testimonialsHaileyParagraph3={this.state.testimonialsHaileyParagraph3}
+					testimonialsHaileyParagraph4={this.state.testimonialsHaileyParagraph4}
+					testimonialsHaileyParagraph5={this.state.testimonialsHaileyParagraph5}
+
+					testimonialsChrisHeading={this.state.testimonialsChrisHeading}
+					testimonialsChrisParagraph1={this.state.testimonialsChrisParagraph1}
+					testimonialsChrisParagraph2={this.state.testimonialsChrisParagraph2}
+					testimonialsChrisParagraph3={this.state.testimonialsChrisParagraph3}
+				/>
 				<Footer footer={this.state.footer} />
 			</div>
 		);

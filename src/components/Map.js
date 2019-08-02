@@ -90,12 +90,11 @@ export default class Map extends Component {
 	}
 	
 	render() {
-
 		return (
 			<Fragment>
 				<div className="map">
 					<div className="map__container">
-						<div className="map__heading">Now hiring in...</div>
+						<div className="map__heading">{this.props.mapHeading}</div>
 						<div className="row">
 							<div className="col-1-of-2">
 								<img
@@ -169,8 +168,8 @@ export default class Map extends Component {
 								</div>
 							</div>
 						</div>
-						<p className="map__paragraph">The Wright Team is 1,500+ Strong.</p>
-						<p className="map__paragraph">Join the Wright Team Today.</p>
+						<p className="map__paragraph">{this.props.mapParagraph1}</p>
+						<p className="map__paragraph">{this.props.mapParagraph2}</p>
 					</div>
 				</div>
 			</Fragment>

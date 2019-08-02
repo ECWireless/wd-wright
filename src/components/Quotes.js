@@ -1,13 +1,5 @@
 import React, {Fragment} from 'react';
 
-// 2x Density
-import Kid3 from '../assets/Kid-Workers/Medium/Kid-5-2x.png';
-import Kid4 from '../assets/Kid-Workers/Medium/Kid-6-2x.png';
-
-// 1x Density
-import Kid3Small from '../assets/Kid-Workers/Small/Kid-5-1x.png';
-import Kid4Small from '../assets/Kid-Workers/Small/Kid-6-1x.png';
-
 export default function Videos(props) {
 
     return (
@@ -49,21 +41,21 @@ export default function Videos(props) {
 						<p className="quotes__paragraph3">{props.quotesParagraph3}</p>
 					</div>
 					<img
-						srcSet={`${Kid3Small} 509w, ${Kid3} 1017w`}
+						srcSet={`${props.quotesPhoto3Small} 509w, ${props.quotesPhoto3} 1017w`}
 						sizes="(max-width: 75em) 24vw, (max-width: 56.25em) 27vw, (max-width: 37.5em) 30vw, 502px"
 						alt="kid-worker-3"
 						className="quotes__photo-3"
-						src={Kid3}
+						src={props.quotesPhoto3}
 					/>
 				</div>
 
 				<div className="quotes__row-4">
 					<img
-						srcSet={`${Kid4Small} 600w, ${Kid4} 1200w`}
+						srcSet={`${props.quotesPhoto4Small} 600w, ${props.quotesPhoto4} 1200w`}
 						sizes="(max-width: 75em) 38vw, (max-width: 56.25em) 50vw, (max-width: 37.5em) 45vw, 500px"
 						alt="kid-worker-4"
 						className="quotes__photo-4"
-						src={Kid4}
+						src={props.quotesPhoto4}
 					/>
 					<div className="quotes__text-4 margin-b-medium">
 						<div className="quotes__heading4">{props.quotesHeading4}</div>
