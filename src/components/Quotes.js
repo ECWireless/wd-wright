@@ -7,7 +7,7 @@ export default function Videos(props) {
             <div className="quotes">
 				<div className="quotes__row-1 margin-b-large">
 					<div className="quotes__text-1 margin-b-medium">
-						<p className="quotes__heading1">{props.quotesHeading1}</p>
+						<h1 className="quotes__heading1">{props.quotesHeading1}</h1>
 						<p className="quotes__paragraph1">{props.quotesParagraph1}</p>
 					</div>
 					<img
@@ -29,7 +29,7 @@ export default function Videos(props) {
 					/>
 
 					<div className="quotes__text-2 margin-b-medium">
-						<div className="quotes__heading2">{props.quotesHeading2}</div>
+						<h1 className="quotes__heading2">{props.quotesHeading2}</h1>
 						<p className="quotes__paragraph2 margin-b-medium">{props.quotesParagraph2_1}</p>
 						<p className="quotes__paragraph2">{props.quotesParagraph2_2}</p>
 					</div>
@@ -37,7 +37,7 @@ export default function Videos(props) {
 
 				<div className="quotes__row-3 margin-b-large">
 					<div className="quotes__text-3 margin-b-medium">
-						<p className="quotes__heading3">{props.quotesHeading2}</p>
+						<h1 className="quotes__heading3">{props.quotesHeading2}</h1>
 						<p className="quotes__paragraph3">{props.quotesParagraph3}</p>
 					</div>
 					<img
@@ -58,7 +58,7 @@ export default function Videos(props) {
 						src={props.quotesPhoto4}
 					/>
 					<div className="quotes__text-4 margin-b-medium">
-						<div className="quotes__heading4">{props.quotesHeading4}</div>
+						<h1 className="quotes__heading4">{props.quotesHeading4}</h1>
 						<p className="quotes__paragraph4">{props.quotesParagraph4}</p>
 					</div>
 				</div>

@@ -42,7 +42,7 @@ export default class Testimonials extends Component {
 		if (this.state.clicked1) {
 			testimonial = (
 				<div className={this.state.clicked1 ? "testimonial-fade-1" : ""}>
-					<div className="testimonials__heading2">{this.props.testimonialsRickHeading}</div>
+					<h1 className="testimonials__heading2">{this.props.testimonialsRickHeading}</h1>
 					<p className="testimonials__paragraph">{this.props.testimonialsRickParagraph1}</p>
 
 					<p className="testimonials__paragraph">{this.props.testimonialsRickParagraph2}</p>
@@ -59,7 +59,7 @@ export default class Testimonials extends Component {
 		} else if (this.state.clicked2) {
 			testimonial = (
 				<div className={this.state.clicked2 ? "testimonial-fade-2" : ""}>
-					<div className="testimonials__heading2">{this.props.testimonialsHaileyHeading}</div>
+					<h1 className="testimonials__heading2">{this.props.testimonialsHaileyHeading}</h1>
 					<p className="testimonials__paragraph">{this.props.testimonialsHaileyParagraph1}</p>
 
 					<p className="testimonials__paragraph">{this.props.testimonialsHaileyParagraph2}</p>
@@ -74,7 +74,7 @@ export default class Testimonials extends Component {
 		} else {
 			testimonial = (
 				<div className={this.state.clicked3 ? "testimonial-fade-3" : ""}>
-					<div className="testimonials__heading2">{this.props.testimonialsChrisHeading}</div>
+					<h1 className="testimonials__heading2">{this.props.testimonialsChrisHeading}</h1>
 					<p className="testimonials__paragraph">{this.props.testimonialsChrisParagraph1}</p>
 
 					<p className="testimonials__paragraph">{this.props.testimonialsChrisParagraph2}</p>
@@ -87,7 +87,7 @@ export default class Testimonials extends Component {
 		return (
 			<Fragment>
 				<div className="testimonials">
-					<div className="testimonials__heading1">{this.props.testimonialsHeading}</div>
+					<h1 className="testimonials__heading1">{this.props.testimonialsHeading}</h1>
 					<div className="testimonials__photos">
 						<div 
 							className={
@@ -97,7 +97,7 @@ export default class Testimonials extends Component {
 							}
 							onClick={this.handleClicked1}
 						>
-							<div className="testimonials__name">Photo of Rick</div>
+							<p className="testimonials__name">Photo of Rick</p>
 						</div>
 						<div
 							className={
@@ -117,7 +117,7 @@ export default class Testimonials extends Component {
 							}
 							onClick={this.handleClicked3}
 						>
-							<div className="testimonials__name">Photo of Chris</div>
+							<p className="testimonials__name">Photo of Chris</p>
 						</div>
 					</div>
 					<div className={this.state.triangle}></div>

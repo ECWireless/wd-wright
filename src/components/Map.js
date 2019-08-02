@@ -94,7 +94,7 @@ export default class Map extends Component {
 			<Fragment>
 				<div className="map">
 					<div className="map__container">
-						<div className="map__heading">{this.props.mapHeading}</div>
+						<h1 className="map__heading">{this.props.mapHeading}</h1>
 						<div className="row">
 							<div className="col-1-of-2">
 								<img

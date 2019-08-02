@@ -4,7 +4,7 @@ export default function Perks(props) {
     return (
         <Fragment>
             <div className="perks">
-				<div className="perks__heading1">{props.perksheading1}</div>
+				<h1 className="perks__heading1">{props.perksheading1}</h1>
 				<div className="row">
 					<div className="col-1-of-2">
 						<div className="center perks__construction-photo"></div>
@@ -14,9 +14,9 @@ export default function Perks(props) {
 						<p className="perks__bullet2">{props.perksBullet2}</p>
 					</div>
 				</div>
-				<div className="center perks__paragraph1">{props.perksParagraph1}</div>
+				<p className="center perks__paragraph1">{props.perksParagraph1}</p>
 				<hr className="perks__line"/>
-				<div className="center perks__paragraph2">{props.perksParagraph2}</div>
+				<p className="center perks__paragraph2">{props.perksParagraph2}</p>
 			</div>
 			<div className="perks__banner"></div>
         </Fragment>
