@@ -42,44 +42,44 @@ export default class Testimonials extends Component {
 		if (this.state.clicked1) {
 			testimonial = (
 				<div className={this.state.clicked1 ? "testimonial-fade-1" : ""}>
-					<h1 className="testimonials__heading2">{this.props.testimonialsRickHeading}</h1>
-					<p className="testimonials__paragraph">{this.props.testimonialsRickParagraph1}</p>
+					<h1 className="testimonials__heading2">{this.props.testimonials1Heading}</h1>
+					<p className="testimonials__paragraph">{this.props.testimonials1Paragraph1}</p>
 
-					<p className="testimonials__paragraph">{this.props.testimonialsRickParagraph2}</p>
+					<p className="testimonials__paragraph">{this.props.testimonials1Paragraph2}</p>
 
-					<p className="testimonials__paragraph">{this.props.testimonialsRickParagraph3}</p>
+					<p className="testimonials__paragraph">{this.props.testimonials1Paragraph3}</p>
 
-					<p className="testimonials__paragraph">{this.props.testimonialsRickParagraph4}</p>
+					<p className="testimonials__paragraph">{this.props.testimonials1Paragraph4}</p>
 
-					<p className="testimonials__paragraph">{this.props.testimonialsRickParagraph5}</p>
+					<p className="testimonials__paragraph">{this.props.testimonials1Paragraph5}</p>
 
-					<p className="testimonials__paragraph">{this.props.testimonialsRickParagraph6}</p>
+					<p className="testimonials__paragraph">{this.props.testimonials1Paragraph6}</p>
 				</div>
 			);
 		} else if (this.state.clicked2) {
 			testimonial = (
 				<div className={this.state.clicked2 ? "testimonial-fade-2" : ""}>
-					<h1 className="testimonials__heading2">{this.props.testimonialsHaileyHeading}</h1>
-					<p className="testimonials__paragraph">{this.props.testimonialsHaileyParagraph1}</p>
+					<h1 className="testimonials__heading2">{this.props.testimonials2Heading}</h1>
+					<p className="testimonials__paragraph">{this.props.testimonials2Paragraph1}</p>
 
-					<p className="testimonials__paragraph">{this.props.testimonialsHaileyParagraph2}</p>
+					<p className="testimonials__paragraph">{this.props.testimonials2Paragraph2}</p>
 
-					<p className="testimonials__paragraph">{this.props.testimonialsHaileyParagraph3}</p>
+					<p className="testimonials__paragraph">{this.props.testimonials2Paragraph3}</p>
 
-					<p className="testimonials__paragraph">{this.props.testimonialsHaileyParagraph4}</p>
+					<p className="testimonials__paragraph">{this.props.testimonials2Paragraph4}</p>
 
-					<p className="testimonials__paragraph">{this.props.testimonialsHaileyParagraph5}</p>
+					<p className="testimonials__paragraph">{this.props.testimonials2Paragraph5}</p>
 				</div>
 			);
 		} else {
 			testimonial = (
 				<div className={this.state.clicked3 ? "testimonial-fade-3" : ""}>
-					<h1 className="testimonials__heading2">{this.props.testimonialsChrisHeading}</h1>
-					<p className="testimonials__paragraph">{this.props.testimonialsChrisParagraph1}</p>
+					<h1 className="testimonials__heading2">{this.props.testimonials3Heading}</h1>
+					<p className="testimonials__paragraph">{this.props.testimonials3Paragraph1}</p>
 
-					<p className="testimonials__paragraph">{this.props.testimonialsChrisParagraph2}</p>
+					<p className="testimonials__paragraph">{this.props.testimonials3Paragraph2}</p>
 
-					<p className="testimonials__paragraph">{this.props.testimonialsChrisParagraph3}</p>
+					<p className="testimonials__paragraph">{this.props.testimonials3Paragraph3}</p>
 				</div>
 			);
 		}
@@ -97,7 +97,7 @@ export default class Testimonials extends Component {
 							}
 							onClick={this.handleClicked1}
 						>
-							<p className="testimonials__name">Photo of Rick</p>
+							<div className="testimonials__name--2" style={{backgroundImage: `url(${this.props.testimonials1Photo})`}}></div>
 						</div>
 						<div
 							className={
@@ -107,7 +107,7 @@ export default class Testimonials extends Component {
 							}
 							onClick={this.handleClicked2}
 						>
-							<div className="testimonials__name--2" style={{backgroundImage: `url(${this.props.hailey})`}}></div>
+							<div className="testimonials__name--2" style={{backgroundImage: `url(${this.props.testimonials2Photo})`}}></div>
 						</div>
 						<div
 							className={
@@ -117,7 +117,7 @@ export default class Testimonials extends Component {
 							}
 							onClick={this.handleClicked3}
 						>
-							<p className="testimonials__name">Photo of Chris</p>
+							<div className="testimonials__name--2" style={{backgroundImage: `url(${this.props.testimonials3Photo})`}}></div>
 						</div>
 					</div>
 					<div className={this.state.triangle}></div>

@@ -10,7 +10,7 @@ import Perks from './components/Perks';
 import Quotes from './components/Quotes';
 import Testimonials from './components/Testimonials';
 
-const root = 'https://wdtest.studiome.me/wp-json/wp/v2/pages/14';
+const root = 'https://backend.wdwwork.com/wp-json/wp/v2/pages/322';
 
 export default class App extends Component {
 	state = {
@@ -32,14 +32,14 @@ export default class App extends Component {
 			let bannerVideoUrl = responseJson.acf.banner.banner_video_url;
 			let bannerButtonUrl = responseJson.acf.banner.banner_button_url;
 
-			// Perks
+			// // Perks
 			let perksHeading1 = responseJson.acf.perks.perks_heading_1;
 			let perksBullet1 = responseJson.acf.perks.perk_bullet_1;
 			let perksBullet2 = responseJson.acf.perks.perk_bullet_2;
 			let perksParagraph1 = responseJson.acf.perks.perk_paragraph_1;
 			let perksParagraph2 = responseJson.acf.perks.perk_paragraph_2;
 
-			// Quotes
+			// // Quotes
 			let quotesHeading1 = responseJson.acf.quotes.quotes_heading_1;
 			let quotesParagraph1 = responseJson.acf.quotes.quotes_paragraph_1;
 			let quotesPhoto1 = responseJson.acf.quotes.quotes_photo_1.url;
@@ -61,48 +61,50 @@ export default class App extends Component {
 			let quotesPhoto4 = responseJson.acf.quotes.quotes_photo_4.url;
 			let quotesPhoto4Small = responseJson.acf.quotes.quotes_photo_4_small.url;
 
-			// Map
+			// // Map
 			let mapHeading = responseJson.acf.map.map_heading;
 			let mapParagraph1 = responseJson.acf.map.map_paragraph_1;
 			let mapParagraph2 = responseJson.acf.map.map_paragraph_2;
 
-			// Testimonial
-			let testimonialsHailey = responseJson.acf.testimonials.testimonial_hailey.url;
+			// // Testimonial
 			let testimonialsHeading = responseJson.acf.testimonials.testimonials_heading;
 
-			let testimonialsRickHeading = responseJson.acf.testimonials.testimonials_rick_heading;
-			let testimonialsRickParagraph1 = responseJson.acf.testimonials.testimonials_paragraph_rick_1;
-			let testimonialsRickParagraph2 = responseJson.acf.testimonials.testimonials_paragraph_rick_2;
-			let testimonialsRickParagraph3 = responseJson.acf.testimonials.testimonials_paragraph_rick_3;
-			let testimonialsRickParagraph4 = responseJson.acf.testimonials.testimonials_paragraph_rick_4;
-			let testimonialsRickParagraph5 = responseJson.acf.testimonials.testimonials_paragraph_rick_5;
-			let testimonialsRickParagraph6 = responseJson.acf.testimonials.testimonials_paragraph_rick_6;
+			let testimonials1Heading = responseJson.acf.testimonials.testimonials_1_heading;
+			let testimonials1Photo = responseJson.acf.testimonials.testimonials_1_photo.url;
+			let testimonials1Paragraph1 = responseJson.acf.testimonials.testimonials_1_paragraph_1;
+			let testimonials1Paragraph2 = responseJson.acf.testimonials.testimonials_1_paragraph_2;
+			let testimonials1Paragraph3 = responseJson.acf.testimonials.testimonials_1_paragraph_3;
+			let testimonials1Paragraph4 = responseJson.acf.testimonials.testimonials_1_paragraph_4;
+			let testimonials1Paragraph5 = responseJson.acf.testimonials.testimonials_1_paragraph_5;
+			let testimonials1Paragraph6 = responseJson.acf.testimonials.testimonials_1_paragraph_6;
 
-			let testimonialsHaileyHeading = responseJson.acf.testimonials.testimonials_hailey_heading;
-			let testimonialsHaileyParagraph1 = responseJson.acf.testimonials.testimonials_paragraph_hailey_1;
-			let testimonialsHaileyParagraph2 = responseJson.acf.testimonials.testimonials_paragraph_hailey_2;
-			let testimonialsHaileyParagraph3 = responseJson.acf.testimonials.testimonials_paragraph_hailey_3;
-			let testimonialsHaileyParagraph4 = responseJson.acf.testimonials.testimonials_paragraph_hailey_4;
-			let testimonialsHaileyParagraph5 = responseJson.acf.testimonials.testimonials_paragraph_hailey_5;
+			let testimonials2Heading = responseJson.acf.testimonials.testimonials_2_heading;
+			let testimonials2Photo = responseJson.acf.testimonials.testimonials_2_photo.url;
+			let testimonials2Paragraph1 = responseJson.acf.testimonials.testimonials_2_paragraph_1;
+			let testimonials2Paragraph2 = responseJson.acf.testimonials.testimonials_2_paragraph_2;
+			let testimonials2Paragraph3 = responseJson.acf.testimonials.testimonials_2_paragraph_3;
+			let testimonials2Paragraph4 = responseJson.acf.testimonials.testimonials_2_paragraph_4;
+			let testimonials2Paragraph5 = responseJson.acf.testimonials.testimonials_2_paragraph_5;
 
-			let testimonialsChrisHeading = responseJson.acf.testimonials.testimonials_chris_heading;
-			let testimonialsChrisParagraph1 = responseJson.acf.testimonials.testimonials_paragraph_chris_1;
-			let testimonialsChrisParagraph2 = responseJson.acf.testimonials.testimonials_paragraph_chris_2;
-			let testimonialsChrisParagraph3 = responseJson.acf.testimonials.testimonials_paragraph_chris_3;
+			let testimonials3Heading = responseJson.acf.testimonials.testimonials_3_heading;
+			let testimonials3Photo = responseJson.acf.testimonials.testimonials_3_photo.url;
+			let testimonials3Paragraph1 = responseJson.acf.testimonials.testimonials_3_paragraph_1;
+			let testimonials3Paragraph2 = responseJson.acf.testimonials.testimonials_3_paragraph_2;
+			let testimonials3Paragraph3 = responseJson.acf.testimonials.testimonials_3_paragraph_3;
 			
 			this.setState({
 				// Banner
 				bannerVideoUrl,
 				bannerButtonUrl,
 
-				// Perks
+				// // Perks
 				perksHeading1,
 				perksBullet1,
 				perksBullet2,
 				perksParagraph1,
 				perksParagraph2,
 
-				// Quotes
+				// // Quotes
 				quotesHeading1,
 				quotesParagraph1,
 				quotesPhoto1,
@@ -124,34 +126,36 @@ export default class App extends Component {
 				quotesPhoto4,
 				quotesPhoto4Small,
 
-				// Map
+				// // Map
 				mapHeading,
 				mapParagraph1,
 				mapParagraph2,
 
-				// Testimonial
-				testimonialsHailey,
+				// // Testimonial
 				testimonialsHeading,
 
-				testimonialsRickHeading,
-				testimonialsRickParagraph1,
-				testimonialsRickParagraph2,
-				testimonialsRickParagraph3,
-				testimonialsRickParagraph4,
-				testimonialsRickParagraph5,
-				testimonialsRickParagraph6,
+				testimonials1Heading,
+				testimonials1Photo,
+				testimonials1Paragraph1,
+				testimonials1Paragraph2,
+				testimonials1Paragraph3,
+				testimonials1Paragraph4,
+				testimonials1Paragraph5,
+				testimonials1Paragraph6,
 
-				testimonialsHaileyHeading,
-				testimonialsHaileyParagraph1,
-				testimonialsHaileyParagraph2,
-				testimonialsHaileyParagraph3,
-				testimonialsHaileyParagraph4,
-				testimonialsHaileyParagraph5,
+				testimonials2Heading,
+				testimonials2Photo,
+				testimonials2Paragraph1,
+				testimonials2Paragraph2,
+				testimonials2Paragraph3,
+				testimonials2Paragraph4,
+				testimonials2Paragraph5,
 
-				testimonialsChrisHeading,
-				testimonialsChrisParagraph1,
-				testimonialsChrisParagraph2,
-				testimonialsChrisParagraph3,
+				testimonials3Heading,
+				testimonials3Photo,
+				testimonials3Paragraph1,
+				testimonials3Paragraph2,
+				testimonials3Paragraph3,
             })
         })
 	}
@@ -230,30 +234,35 @@ export default class App extends Component {
 					mapParagraph2={this.state.mapParagraph2}
 				/>
 				<Testimonials
-					hailey={this.state.testimonialsHailey}
 					testimonialsHeading={this.state.testimonialsHeading}
 
-					testimonialsRickHeading={this.state.testimonialsRickHeading}
-					testimonialsRickParagraph1={this.state.testimonialsRickParagraph1}
-					testimonialsRickParagraph2={this.state.testimonialsRickParagraph2}
-					testimonialsRickParagraph3={this.state.testimonialsRickParagraph3}
-					testimonialsRickParagraph4={this.state.testimonialsRickParagraph4}
-					testimonialsRickParagraph5={this.state.testimonialsRickParagraph5}
-					testimonialsRickParagraph6={this.state.testimonialsRickParagraph6}
+					testimonials1Heading={this.state.testimonials1Heading}
+					testimonials1Photo={this.state.testimonials1Photo}
+					testimonials1Paragraph1={this.state.testimonials1Paragraph1}
+					testimonials1Paragraph2={this.state.testimonials1Paragraph2}
+					testimonials1Paragraph3={this.state.testimonials1Paragraph3}
+					testimonials1Paragraph4={this.state.testimonials1Paragraph4}
+					testimonials1Paragraph5={this.state.testimonials1Paragraph5}
+					testimonials1Paragraph6={this.state.testimonials1Paragraph6}
 
-					testimonialsHaileyHeading={this.state.testimonialsHaileyHeading}
-					testimonialsHaileyParagraph1={this.state.testimonialsHaileyParagraph1}
-					testimonialsHaileyParagraph2={this.state.testimonialsHaileyParagraph2}
-					testimonialsHaileyParagraph3={this.state.testimonialsHaileyParagraph3}
-					testimonialsHaileyParagraph4={this.state.testimonialsHaileyParagraph4}
-					testimonialsHaileyParagraph5={this.state.testimonialsHaileyParagraph5}
+					testimonials2Heading={this.state.testimonials2Heading}
+					testimonials2Photo={this.state.testimonials2Photo}
+					testimonials2Paragraph1={this.state.testimonials2Paragraph1}
+					testimonials2Paragraph2={this.state.testimonials2Paragraph2}
+					testimonials2Paragraph3={this.state.testimonials2Paragraph3}
+					testimonials2Paragraph4={this.state.testimonials2Paragraph4}
+					testimonials2Paragraph5={this.state.testimonials2Paragraph5}
 
-					testimonialsChrisHeading={this.state.testimonialsChrisHeading}
-					testimonialsChrisParagraph1={this.state.testimonialsChrisParagraph1}
-					testimonialsChrisParagraph2={this.state.testimonialsChrisParagraph2}
-					testimonialsChrisParagraph3={this.state.testimonialsChrisParagraph3}
+					testimonials3Heading={this.state.testimonials3Heading}
+					testimonials3Photo={this.state.testimonials3Photo}
+					testimonials3Paragraph1={this.state.testimonials3Paragraph1}
+					testimonials3Paragraph2={this.state.testimonials3Paragraph2}
+					testimonials3Paragraph3={this.state.testimonials3Paragraph3}
 				/>
-				<Footer footer={this.state.footer} />
+				<Footer
+					footer={this.state.footer}
+					bannerButtonUrl={this.state.bannerButtonUrl}
+				/>
 			</div>
 		);
 	}

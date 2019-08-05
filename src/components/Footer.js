@@ -6,7 +6,7 @@ export default function Footer(props) {
             <div className={props.footer}>
                 <div className="footer__button-container">
                     <a
-                        href="https://wdwright.isolvedhire.com/jobmap/"
+                        href={props.bannerButtonUrl}
                         target="_blank"
                         rel="noopener noreferrer"
                     >

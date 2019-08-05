@@ -37,7 +37,7 @@ export default function Videos(props) {
 
 				<div className="quotes__row-3 margin-b-large">
 					<div className="quotes__text-3 margin-b-medium">
-						<h1 className="quotes__heading3">{props.quotesHeading2}</h1>
+						<h1 className="quotes__heading3">{props.quotesHeading3}</h1>
 						<p className="quotes__paragraph3">{props.quotesParagraph3}</p>
 					</div>
 					<img
