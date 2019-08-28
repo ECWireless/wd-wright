@@ -289,6 +289,16 @@
             margin-bottom: 3rem;
         }
     }
+
+    &__reviews {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5rem;
+    }
+
+    &__reviews-photo {
+        width: 80rem;
+    }
 }
 
 .testimonial-fade-1 {

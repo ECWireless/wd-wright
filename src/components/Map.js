@@ -30,6 +30,8 @@ export default class Map extends Component {
 
 		map: MapOriginal,
 		mapSmall: MapOriginal1x,
+		state: '',
+		city: ''
 	}
 
 	// Map Event Handlers
@@ -37,6 +39,8 @@ export default class Map extends Component {
 		this.setState({
 			map: MapOriginal,
 			mapSmall: MapOriginal1x,
+			state: '',
+			city: ''
 		})
 	}
 
@@ -44,6 +48,8 @@ export default class Map extends Component {
 		this.setState({
 			map: MapPA,
 			mapSmall: MapPA1x,
+			state: 'Pennsylvania',
+			city: 'Beaver Falls, Greensburg, Washington, York, Quakertown'
 		})
 	}
 
@@ -51,6 +57,8 @@ export default class Map extends Component {
 		this.setState({
 			map: MapOH,
 			mapSmall: MapOH1x,
+			state: 'Ohio',
+			city: 'Medina, Cincinnati, Columbus, Bowling Green'
 		})
 	}
 
@@ -58,13 +66,15 @@ export default class Map extends Component {
 		this.setState({
 			map: MapIN,
 			mapSmall: MapIN1x,
+			state: 'Indiana',
+			city: 'Indianapolis, Garden City'
 		})
 	}
 
 	handleMapNY = () => {
 		this.setState({
 			map: MapNY,
-			mapSmall: MapNY1x,
+			mapSmall: MapNY1x
 		})
 	}
 
@@ -72,6 +82,8 @@ export default class Map extends Component {
 		this.setState({
 			map: MapNC,
 			mapSmall: MapNC1x,
+			state: 'North Carolina',
+			city: 'Raleigh/Durham, Winston-Salem, Charlotte, Asheville'
 		})
 	}
 
@@ -79,6 +91,8 @@ export default class Map extends Component {
 		this.setState({
 			map: MapSC,
 			mapSmall: MapSC1x,
+			state: 'South Carolina',
+			city: 'Florence, Greenville'
 		})
 	}
 
@@ -86,6 +100,8 @@ export default class Map extends Component {
 		this.setState({
 			map: MapFL,
 			mapSmall: MapFL1x,
+			state: 'Florida',
+			city: 'Haines City'
 		})
 	}
 	
@@ -104,6 +120,8 @@ export default class Map extends Component {
 									className="map__photo"
 									src={this.state.mapSmall}
 								/>
+								<p className="map__offices-state">{this.state.state}</p>
+								<p className="map__offices-city">{this.state.city}</p>
 							</div>
 							<div className="col-1-of-2">
 								<div className="map__button-container">

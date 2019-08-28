@@ -47,6 +47,18 @@
         }
     }
 
+    &__offices-state {
+        height: 5rem;
+        font-size: 2.4rem;
+        color: $primary-color-yellow;
+        font-weight: 600;
+    }
+
+    &__offices-city {
+        height: .5rem;
+        font-size: 1.4rem;
+    }
+
     &__button-container {
         width: 35rem;
         height: 38rem;

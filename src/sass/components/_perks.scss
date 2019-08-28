@@ -20,13 +20,48 @@
         color: $primary-color-blue;
         font-weight: bold;
         text-align: center;
-        font-size: 3.5rem;
+        font-size: 3rem;
         margin-bottom: 10rem;
 
         @include respond(phone) {
             font-size: 2rem;
             margin-bottom: 5rem;
         }
+    }
+
+    &__heading2 {
+        color: $primary-color-blue;
+        font-weight: bold;
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 3rem;
+
+        @include respond(phone) {
+            font-size: 2rem;
+            margin-bottom: 5rem;
+        }
+    }
+
+    &__heading3 {
+        color: $primary-color-blue;
+        font-weight: bold;
+        text-align: center;
+        font-size: 4.5rem;
+
+        @include respond(phone) {
+            font-size: 2rem;
+            margin-bottom: 5rem;
+        }
+    }
+
+    &__faqs {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10rem;
+    }
+
+    &__faqs-image {
+        height: 60rem;
     }
 
     &__construction-photo {

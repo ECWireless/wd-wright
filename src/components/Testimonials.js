@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react';
+import Reviews from '../assets/Testimonials/reviews.png';
 
 export default class Testimonials extends Component {
 	state = {
@@ -125,8 +126,12 @@ export default class Testimonials extends Component {
 						<div className="testimonials__container">
 							{testimonial}
 						</div>
+						<div className="testimonials__reviews">
+							<img className="testimonials__reviews-photo" src={Reviews} alt="reviews"/>
+						</div>
 					</div>
 				</div>
+				
 			</Fragment>
 		)
 	}
