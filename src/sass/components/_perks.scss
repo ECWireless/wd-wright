@@ -62,6 +62,10 @@
 
     &__faqs-image {
         height: 60rem;
+
+        @include respond(phone) {
+            height: 40rem;
+        }
     }
 
     &__construction-photo {
