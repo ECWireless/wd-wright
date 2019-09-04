@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react';
 
 import Logo2x from '../assets/Navigation/Wright-Logo-2x.png';
 import Logo1x from '../assets/Navigation/Wright-Logo-1x.png';
-import Join from '../assets/Navigation/Join-Banner-2x.png';
+import Join from '../assets/Navigation/Wright-Family.png';
 
 export default class Navigation extends Component {
 
