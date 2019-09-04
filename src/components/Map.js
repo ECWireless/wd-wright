@@ -4,7 +4,7 @@ import MapOriginal from '../assets/Maps/map.png';
 import MapPA from '../assets/Maps/map-pa.png';
 import MapOH from '../assets/Maps/map-oh.png';
 import MapIN from '../assets/Maps/map-in.png';
-import MapNY from '../assets/Maps/map-ny.png';
+import MapMD from '../assets/Maps/map-md.png';
 import MapNC from '../assets/Maps/map-nc.png';
 import MapSC from '../assets/Maps/map-sc.png';
 import MapFL from '../assets/Maps/map-fl.png';
@@ -13,7 +13,7 @@ import MapOriginal1x from '../assets/Maps/Small/map-1x.png';
 import MapPA1x from '../assets/Maps/Small/map-pa-1x.png';
 import MapOH1x from '../assets/Maps/Small/map-oh-1x.png';
 import MapIN1x from '../assets/Maps/Small/map-in-1x.png';
-import MapNY1x from '../assets/Maps/Small/map-ny-1x.png';
+import MapMD1x from '../assets/Maps/Small/map-md-1x.png';
 import MapNC1x from '../assets/Maps/Small/map-nc-1x.png';
 import MapSC1x from '../assets/Maps/Small/map-sc-1x.png';
 import MapFL1x from '../assets/Maps/Small/map-fl-1x.png';
@@ -71,10 +71,10 @@ export default class Map extends Component {
 		})
 	}
 
-	handleMapNY = () => {
+	handleMapMD = () => {
 		this.setState({
-			map: MapNY,
-			mapSmall: MapNY1x
+			map: MapMD,
+			mapSmall: MapMD1x
 		})
 	}
 
@@ -152,11 +152,11 @@ export default class Map extends Component {
 
 									<div
 										className="map__button map__button--4"
-										onClick={this.handleMapNY}
-										onMouseEnter={this.handleMapNY}
+										onClick={this.handleMapMD}
+										onMouseEnter={this.handleMapMD}
 										onMouseLeave={this.handleMapOriginal}
 									>
-										<div className="map__button-text">NY</div>
+										<div className="map__button-text">MD</div>
 									</div>
 									<div
 										className="map__button map__button--5"

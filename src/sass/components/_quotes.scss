@@ -201,7 +201,10 @@
     &__photo-3 {
         height: 40rem;
         margin-right: 5rem;
-        margin-top: 5rem;
+        margin-top: 10rem;
+        border-radius: 5px;
+        border: 3px solid $primary-color-red;
+        box-shadow: 1px 2px 5px rgba(0,0,0,.3);
 
         @include respond(tab-land) {
             height: 40rem;
@@ -215,7 +218,6 @@
         }
 
         @include respond(phone) {
-            height: 30rem;
             margin: 0 auto 5rem;
         }
     }
@@ -287,25 +289,22 @@
     }
 
     &__photo-4 {
-        width: 40rem;
-        height: 100%;
-        margin-left: 5rem;
-        margin-top: 25rem;
+        height: 40rem;
+        margin: 20rem 5rem 5rem 5rem;
+        border-radius: 5px;
+        border: 3px solid $primary-color-red;
+        box-shadow: 1px 2px 5px rgba(0,0,0,.3);
 
         @include respond(tab-land) {
-            width: 50rem;
-            margin-left: 0;
-            margin-top: 12rem;
+            margin-top: 8rem;
         }
 
         @include respond(tab-port) {
-            width: 50rem;
-            margin: 0 auto;
+            margin: 5rem auto 0;
         }
 
         @include respond(phone) {
-            width: 30rem;
-            margin: 0 auto;
+            margin: 5rem auto 0;
         }
     }
     

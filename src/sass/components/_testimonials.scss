@@ -297,9 +297,11 @@
     }
 
     &__reviews-photo {
+        height: 100%;
         width: 80rem;
 
         @include respond(phone) {
+            height: 100%;
             width: 35rem;
         }
     }
