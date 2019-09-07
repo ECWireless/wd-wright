@@ -38,4 +38,17 @@
         width: 1rem;
         margin-right: 1rem;
     }
+
+    &__paragraph {
+        font-size: 2rem;
+        max-width: 100rem;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 2rem;
+        color: $primary-color-blue;
+    }
+
+    &__bottom {
+        margin-bottom: 6rem;
+    }
 }
