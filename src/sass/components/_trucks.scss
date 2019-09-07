@@ -15,11 +15,57 @@
         &--2 {
             font-size: 2.5rem;
         }
+
+        &--3 {
+            font-size: 2.5rem;
+            margin-top: 6rem;
+        }
+
+        &--4 {
+            font-size: 2.5rem;
+            margin-top: 4rem;
+        }
+
+        &--5 {
+            font-size: 4.5rem;
+            color: $color-white;
+        }
     }
 
     &__photos {
         text-align: center;
-        margin: 3rem auto;
+        margin: 5rem auto 8rem;
+        display: flex;
+        max-width: 100rem;
+    }
+
+    &__photo-1 {
+        background-image: url('../src/assets/Trucks/Truck-1.jpg');
+        background-size: cover;
+        background-position: center;
+        width: 32rem;
+        height: 18rem;
+        margin-right: 2rem;
+        border: 4px solid $primary-color-red;
+    }
+
+    &__photo-2 {
+        background-image: url('../src/assets/Trucks/Truck-2.jpg');
+        background-size: cover;
+        background-position: center;
+        width: 32rem;
+        height: 18rem;
+        margin-right: 2rem;
+        border: 4px solid $primary-color-red;
+    }
+
+    &__photo-3 {
+        background-image: url('../src/assets/Trucks/Truck-3.jpg');
+        background-size: cover;
+        background-position: center;
+        width: 32rem;
+        height: 18rem;
+        border: 4px solid $primary-color-red;
     }
 
     &__list {
@@ -39,13 +85,26 @@
         margin-right: 1rem;
     }
 
+    &__safety {
+        border: 4px solid $primary-color-red;
+        padding: 4rem;
+        margin: 8rem auto;
+        background-color: $primary-color-blue;
+    }
+
     &__paragraph {
         font-size: 2rem;
         max-width: 100rem;
         margin: 0 auto;
         text-align: center;
-        margin-top: 2rem;
-        color: $primary-color-blue;
+        margin-top: 4rem;
+        color: $color-white;
+    }
+
+    &__divider {
+        border-bottom: 2px solid $primary-color-red;
+        width: 25%;
+        margin: 4rem auto 0;
     }
 
     &__bottom {
