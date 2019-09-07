@@ -11,12 +11,10 @@ export default function Trucks() {
             </div>
             <h3 className="trucks__heading trucks__heading--2">Have you seen the Wright trucks? You’ll love to drive the new Silverado double cab which features all kinds of upgrades.</h3>
             <ul className="trucks__list">
-                <div>
-                    <li>Front and rear parking assist with audible sensors</li>
-                    <li>Lane change with side blind zone alert</li>
-                    <li>Audible blind zone alert</li>
-                    <li>Rear traffic audible alert</li>
-                </div>
+                <li className="trucks__list-item-1">Front and rear parking assist with audible sensors</li>
+                <li className="trucks__list-item-2">Lane change with side blind zone alert</li>
+                <li className="trucks__list-item-3">Audible blind zone alert</li>
+                <li className="trucks__list-item-4">Rear traffic audible alert</li>
                 
             </ul>
             <div className="trucks__safety">
