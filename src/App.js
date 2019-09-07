@@ -8,7 +8,8 @@ import Map from './components/Map';
 import Navigation from './components/Navigation';
 import Perks from './components/Perks';
 import Quotes from './components/Quotes';
-import Testimonials from './components/Testimonials';
+// import Testimonials from './components/Testimonials';
+import Trucks from './components/Trucks';
 
 const root = 'https://backend.wdwwork.com/wp-json/wp/v2/pages/322';
 
@@ -233,7 +234,7 @@ export default class App extends Component {
 					mapParagraph1={this.state.mapParagraph1}
 					mapParagraph2={this.state.mapParagraph2}
 				/>
-				<Testimonials
+				{/* <Testimonials
 					testimonialsHeading={this.state.testimonialsHeading}
 
 					testimonials1Heading={this.state.testimonials1Heading}
@@ -258,7 +259,8 @@ export default class App extends Component {
 					testimonials3Paragraph1={this.state.testimonials3Paragraph1}
 					testimonials3Paragraph2={this.state.testimonials3Paragraph2}
 					testimonials3Paragraph3={this.state.testimonials3Paragraph3}
-				/>
+				/> */}
+				<Trucks />
 				<Footer
 					footer={this.state.footer}
 					bannerButtonUrl={this.state.bannerButtonUrl}
