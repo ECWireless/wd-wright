@@ -23,7 +23,7 @@ export default function Videos(props) {
 
 				<div className="quotes__row-2 margin-b-large">
 					<img
-						srcSet={`${props.quotesPhoto3Small} 327w, ${props.quotesPhoto3} 654w`}
+						srcSet={`${flagger1} 509w, ${flagger1} 1017w`}
 						sizes="(max-width: 75em) 13vw, (max-width: 56.25em) 14vw, (max-width: 37.5em) 16vw, 250px"
 						alt="kid-worker-2"
 						className="quotes__photo-2" 
@@ -43,10 +43,10 @@ export default function Videos(props) {
 						<p className="quotes__paragraph3">"I love working with Wright. They don't treat you like another worker, but a person. They know your name and know your life. When I had to leave work for family issues they never gave me any problem. I got treated like family, and that’s the reason why I’m still here!! Things in life happen and they know that and they support you through that.
 
 
-This company invests in you as much as you invest in it. Wright is a family company, and as a member of this family; I have a voice in this company and can effect change! Here I'm able to take care of myself and my family, not only for now, but for the future."</p>
+						This company invests in you as much as you invest in it. Wright is a family company, and as a member of this family; I have a voice in this company and can effect change! Here I'm able to take care of myself and my family, not only for now, but for the future."</p>
 					</div>
 					<img
-						srcSet={`${flagger1} 509w, ${flagger1} 1017w`}
+						srcSet={`${flagger2} 600w, ${flagger2} 1200w`}
 						sizes="(max-width: 75em) 24vw, (max-width: 56.25em) 27vw, (max-width: 37.5em) 30vw, 502px"
 						alt="kid-worker-3"
 						className="quotes__photo-3"
@@ -56,7 +56,7 @@ This company invests in you as much as you invest in it. Wright is a family comp
 
 				<div className="quotes__row-4">
 					<img
-						srcSet={`${flagger2} 600w, ${flagger2} 1200w`}
+						srcSet={`${props.quotesPhoto3Small} 327w, ${props.quotesPhoto3} 654w`}
 						sizes="(max-width: 75em) 38vw, (max-width: 56.25em) 50vw, (max-width: 37.5em) 45vw, 500px"
 						alt="kid-worker-4"
 						className="quotes__photo-4"

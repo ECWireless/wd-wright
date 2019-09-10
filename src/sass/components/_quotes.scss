@@ -114,26 +114,22 @@
     }
 
     &__photo-2 {
-        height: 50rem;
-        margin-left: 10rem;
-        margin-right: 5rem;
-        margin-top: 18rem;
+        height: 40rem;
+        margin: 20rem 5rem 5rem 5rem;
+        border-radius: 5px;
+        border: 3px solid $primary-color-red;
+        box-shadow: 1px 2px 5px rgba(0,0,0,.3);
 
         @include respond(tab-land) {
-            height: 40rem;
-            width: auto;
-            margin-top: 12rem;
+            margin-top: 8rem;
         }
 
         @include respond(tab-port) {
-            height: 40rem;
-            width: auto;
-            margin: 0 auto;
+            margin: 5rem auto 0;
         }
 
         @include respond(phone) {
-            height: 30rem;
-            margin: 0 auto 2rem;
+            margin: 5rem auto 0;
         }
     }
     
@@ -289,22 +285,26 @@
     }
 
     &__photo-4 {
-        height: 40rem;
-        margin: 20rem 5rem 5rem 5rem;
-        border-radius: 5px;
-        border: 3px solid $primary-color-red;
-        box-shadow: 1px 2px 5px rgba(0,0,0,.3);
+        height: 50rem;
+        margin-left: 10rem;
+        margin-right: 5rem;
+        margin-top: 18rem;
 
         @include respond(tab-land) {
-            margin-top: 8rem;
+            height: 40rem;
+            width: auto;
+            margin-top: 12rem;
         }
 
         @include respond(tab-port) {
-            margin: 5rem auto 0;
+            height: 40rem;
+            width: auto;
+            margin: 0 auto;
         }
 
         @include respond(phone) {
-            margin: 5rem auto 0;
+            height: 30rem;
+            margin: 0 auto 2rem;
         }
     }
     

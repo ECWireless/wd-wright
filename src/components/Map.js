@@ -74,8 +74,9 @@ export default class Map extends Component {
 	handleMapMD = () => {
 		this.setState({
 			map: MapMD,
+			mapSmall: MapMD1x,
 			state: 'Maryland',
-			mapSmall: MapMD1x
+			city: 'Hagerstown'
 		})
 	}
 
