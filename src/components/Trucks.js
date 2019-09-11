@@ -22,7 +22,8 @@ export default function Trucks() {
                 <p className="trucks__paragraph">Each unit also has reflective material on hood and back end of the truck, halogen daytime running lights for greater visibility plus speed limit controls.</p>
                 <p className="trucks__paragraph">Plus all the standard features: airbags, rear back-up camera, power-heated outside mirrors.</p>
             </div>
-            <h3 className="trucks__heading trucks__heading--3">You can earn the right to be a WRIGHT crew leader and drive this truck home at night.</h3>
+            <h3 className="trucks__heading trucks__heading--3">You can earn the right to be a WRIGHT crew leader.</h3>
+            <h3 className="trucks__heading trucks__heading--6">Drive this truck home at night and get an extra $.50/hour.</h3>
             <div className="trucks__divider"></div>
             <h3 className="trucks__heading trucks__heading--4">Plus earn safe driver bonus rewards—up to $650 a year.  Real money!!</h3>
             <div className="trucks__bottom"></div>
