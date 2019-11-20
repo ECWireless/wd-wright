@@ -135,7 +135,7 @@
         width: 32rem;
         height: 18rem;
         margin-right: 2rem;
-        border: 3px solid $primary-color-blue;
+        border: 4px solid $primary-color-blue;
         transition: .3s all ease;
 
         @include respond(tab-port) {
