@@ -131,7 +131,7 @@
 
         @media (min-resolution: 192dpi) and (min-width: 37.5em),
                 (min-width: 125em) {
-                    background-image: url('./assets/Testimonials/Hailey-2x.jpg');
+                    background-image: url('../../assets/Testimonials/Hailey-2x.jpg');
         }
 
         @include respond(tab-land) {

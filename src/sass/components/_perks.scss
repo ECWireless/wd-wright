@@ -73,7 +73,7 @@
     }
 
     &__construction-photo {
-        background-image: url('./assets/Perks/Perks-1x.jpg');
+        background-image: url('../../assets/Perks/Perks-1x.jpg');
         background-position: center;
         background-size: cover;
         width: 45rem;
@@ -83,7 +83,7 @@
 
         @media (min-resolution: 192dpi) and (min-width: 37.5em),
                 (min-width: 125em) {
-                    background-image: url('./assets/Perks/Perks-2x.jpg');
+                    background-image: url('../../assets/Perks/Perks-2x.jpg');
         }
 
         @include respond(tab-land) {
@@ -224,7 +224,7 @@
     }
 
     &__banner {
-        background-image: url('./assets/Perks/Perks-Banner-1x.jpg');
+        background-image: url('../../assets/Perks/Perks-Banner-1x.jpg');
         background-position: bottom;
         background-size: cover;
         height: 35rem;
@@ -233,7 +233,7 @@
 
         @media (min-resolution: 192dpi) and (min-width: 37.5em),
                 (min-width: 125em) {
-                    background-image: url('./assets/Perks/Perks-Banner-2x.jpg');
+                    background-image: url('../../assets/Perks/Perks-Banner-2x.jpg');
         }
 
         @include respond(tab-land) {

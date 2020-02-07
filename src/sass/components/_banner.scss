@@ -55,7 +55,7 @@
     } 
 
     &__photo {
-        background-image: url('./assets/Banner/Blurred-bg-1x.jpg');
+        background-image: url('../../assets/Banner/Blurred-bg-1x.jpg');
         background-size: cover;
         background-position: center;
         height: 100%;
@@ -63,7 +63,7 @@
 
         @media (min-resolution: 192dpi) and (min-width: 37.5em),
                 (min-width: 125em) {
-            background-image: url('./assets/Banner/Blurred-bg-2x.jpg');
+            background-image: url('../../assets/Banner/Blurred-bg-2x.jpg');
         }
         
         @include respond(tab-land) {
@@ -71,7 +71,7 @@
                 to right bottom, 
                 rgba($primary-color-blue, 0.8), 
                 rgba($color-white, 0.8)) , 
-                url('./assets/Banner/Blurred-bg-1x.jpg');
+                url('../../assets/Banner/Blurred-bg-1x.jpg');
             height: 100%;
             display: block;
         }
@@ -81,7 +81,7 @@
                 to right bottom, 
                 rgba($primary-color-blue, 0.8), 
                 rgba($color-white, 0.8)) , 
-                url('./assets/Banner/Blurred-bg-1x.jpg');
+                url('../../assets/Banner/Blurred-bg-1x.jpg');
             height: 100%;
         }
     }
