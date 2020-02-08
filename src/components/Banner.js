@@ -16,7 +16,7 @@ export default class Banner extends Component {
 		return (
 			<Fragment>
 				<div className="banner">
-					<div className="banner__photo"/>
+					<div alt="Truck Banner" className="banner__photo"/>
 						<div className="banner__video">
 							<iframe
 								className="video-size"

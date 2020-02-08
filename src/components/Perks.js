@@ -26,7 +26,7 @@ export default function Perks(props) {
 				</div>
 				
 			</div>
-			<div className="perks__banner"></div>
+			<div alt="Traffic Cones" className="perks__banner"></div>
         </Fragment>
     )
 }

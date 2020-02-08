@@ -15,7 +15,7 @@ export default function Videos(props) {
 					<img
 						srcSet={`${props.quotesPhoto1Small} 465w, ${props.quotesPhoto1} 930w`}
 						sizes="(max-width: 75em) 27vw,(max-width: 56.25em) 29vw, (max-width: 37.5em) 31vw, 465px"
-						alt="kid-worker-1"
+						alt="Child Holding Traffic Sign"
 						className="quotes__photo-1"
 						src={props.quotesPhoto1}
 					/>
@@ -25,7 +25,7 @@ export default function Videos(props) {
 					<img
 						srcSet={`${flagger1} 509w, ${flagger1} 1017w`}
 						sizes="(max-width: 75em) 13vw, (max-width: 56.25em) 14vw, (max-width: 37.5em) 16vw, 250px"
-						alt="kid-worker-2"
+						alt="Worker Holding Traffic Sign"
 						className="quotes__photo-2" 
 						src={props.quotesPhoto3}
 					/>
@@ -48,7 +48,7 @@ export default function Videos(props) {
 					<img
 						srcSet={`${flagger2} 600w, ${flagger2} 1200w`}
 						sizes="(max-width: 75em) 24vw, (max-width: 56.25em) 27vw, (max-width: 37.5em) 30vw, 502px"
-						alt="kid-worker-3"
+						alt="Worker Assisting Traffic"
 						className="quotes__photo-3"
 						src={props.quotesPhoto3}
 					/>
@@ -58,7 +58,7 @@ export default function Videos(props) {
 					<img
 						srcSet={`${props.quotesPhoto3Small} 327w, ${props.quotesPhoto3} 654w`}
 						sizes="(max-width: 75em) 38vw, (max-width: 56.25em) 50vw, (max-width: 37.5em) 45vw, 500px"
-						alt="kid-worker-4"
+						alt="Two children dressed in Wright worker uniform"
 						className="quotes__photo-4"
 						src={flagger2}
 					/>

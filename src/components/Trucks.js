@@ -5,9 +5,9 @@ export default function Trucks() {
         <div className="trucks">
             <h1 className="trucks__heading trucks__heading--1">Trucks are high-tech!</h1>
             <div className="trucks__photos">
-                <div className="trucks__photo-1"></div>
-                <div className="trucks__photo-2"></div>
-                <div className="trucks__photo-3"></div>
+                <div alt="Side angle of Wright truck" className="trucks__photo-1"></div>
+                <div alt="Back angle of Wright truck" className="trucks__photo-2"></div>
+                <div alt="Front angle of Wright truck" className="trucks__photo-3"></div>
             </div>
             <h3 className="trucks__heading trucks__heading--2">Have you seen the Wright trucks? You’ll love to drive the new Silverado double cab which features all kinds of upgrades.</h3>
             <ul className="trucks__list">
