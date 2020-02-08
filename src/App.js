@@ -33,13 +33,6 @@ export default class App extends Component {
 			let bannerVideoUrl = responseJson.acf.banner.banner_video_url;
 			let bannerButtonUrl = responseJson.acf.banner.banner_button_url;
 
-			// // Perks
-			let perksHeading1 = responseJson.acf.perks.perks_heading_1;
-			let perksBullet1 = responseJson.acf.perks.perk_bullet_1;
-			let perksBullet2 = responseJson.acf.perks.perk_bullet_2;
-			let perksParagraph1 = responseJson.acf.perks.perk_paragraph_1;
-			let perksParagraph2 = responseJson.acf.perks.perk_paragraph_2;
-
 			// // Quotes
 			let quotesHeading1 = responseJson.acf.quotes.quotes_heading_1;
 			let quotesParagraph1 = responseJson.acf.quotes.quotes_paragraph_1;
@@ -97,13 +90,6 @@ export default class App extends Component {
 				// Banner
 				bannerVideoUrl,
 				bannerButtonUrl,
-
-				// // Perks
-				perksHeading1,
-				perksBullet1,
-				perksBullet2,
-				perksParagraph1,
-				perksParagraph2,
 
 				// // Quotes
 				quotesHeading1,

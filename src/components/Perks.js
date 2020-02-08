@@ -5,7 +5,7 @@ export default function Perks(props) {
     return (
         <Fragment>
             <div className="perks">
-				<h1 className="perks__heading1">DESK JOB NOT FOR YOU? LOOKING FOR SOMETHING MORE HANDS ON OR OUTSIDE? SOMEWHERE WITH POTENTIAL TO MOVE UP?</h1>
+				<h2 className="perks__heading1">DESK JOB NOT FOR YOU? LOOKING FOR SOMETHING MORE HANDS ON OR OUTSIDE? SOMEWHERE WITH POTENTIAL TO MOVE UP?</h2>
 				<h1 className="perks__heading2">WRIGHT IS HIRING!</h1>
 
 				{/* <div className="row">
