@@ -5,8 +5,8 @@ export default function Perks(props) {
     return (
         <Fragment>
             <div className="perks">
-				<h2 className="perks__heading1">DESK JOB NOT FOR YOU? LOOKING FOR SOMETHING MORE HANDS ON OR OUTSIDE? SOMEWHERE WITH POTENTIAL TO MOVE UP?</h2>
-				<h1 className="perks__heading2">WRIGHT IS HIRING!</h1>
+				<h2 className="perks__heading1">{props.perksHeading1}</h2>
+				<h1 className="perks__heading2">{props.perksHeading2}</h1>
 
 				{/* <div className="row">
 					<div className="col-1-of-2">
@@ -17,10 +17,10 @@ export default function Perks(props) {
 						<p className="perks__bullet2">{props.perksBullet2}</p>
 					</div>
 				</div> */}
-				<p className="center perks__paragraph1">No experience necessary! Entry level position, starting pay at +$12.00 with raises every 3 months in your first year of employment! We promote from within!</p>
+				<p className="center perks__paragraph1">{props.perksParagraph1}</p>
 				{/* <hr className="perks__line"/>
 				<p className="center perks__paragraph2">{props.perksParagraph2}</p> */}
-				<h1 className="perks__heading3">FAQs</h1>
+				<h1 className="perks__heading3">{props.perksHeading3}</h1>
 				<div className="perks__faqs">
 					<img className="perks__faqs-image" src={FAQ} alt="FAQ Sheet"/>
 				</div>

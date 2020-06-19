@@ -33,6 +33,12 @@ export default class App extends Component {
 			let bannerVideoUrl = responseJson.acf.banner.banner_video_url;
 			let bannerButtonUrl = responseJson.acf.banner.banner_button_url;
 
+			// Perks
+			let perksHeading1 = responseJson.acf.perks.perks_heading_1;
+			let perksHeading2 = responseJson.acf.perks.perks_heading_2;
+			let perksParagraph1 = responseJson.acf.perks.perks_paragraph_1;
+			let perksHeading3 = responseJson.acf.perks.perks_heading_3
+
 			// // Quotes
 			let quotesHeading1 = responseJson.acf.quotes.quotes_heading_1;
 			let quotesParagraph1 = responseJson.acf.quotes.quotes_paragraph_1;
@@ -90,6 +96,12 @@ export default class App extends Component {
 				// Banner
 				bannerVideoUrl,
 				bannerButtonUrl,
+
+				// Perks
+				perksHeading1,
+				perksHeading2,
+				perksParagraph1,
+				perksHeading3,
 
 				// // Quotes
 				quotesHeading1,
@@ -187,11 +199,10 @@ export default class App extends Component {
 
 				<div style={{position: 'relative', top: '-100px'}} ref={ (ref) => this.myRef=ref }></div>
 				<Perks 
-					perksheading1={this.state.perksHeading1}
-					perksBullet1={this.state.perksBullet1}
-					perksBullet2={this.state.perksBullet2}
+					perksHeading1={this.state.perksHeading1}
+					perksHeading2={this.state.perksHeading2}
 					perksParagraph1={this.state.perksParagraph1}
-					perksParagraph2={this.state.perksParagraph2}
+					perksHeading3={this.state.perksHeading3}
 				/>
 				<Quotes
 					quotesHeading1={this.state.quotesHeading1}
