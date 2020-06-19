@@ -66,31 +66,19 @@ export default class App extends Component {
 			let mapParagraph1 = responseJson.acf.map.map_paragraph_1;
 			let mapParagraph2 = responseJson.acf.map.map_paragraph_2;
 
-			// // Testimonial
-			let testimonialsHeading = responseJson.acf.testimonials.testimonials_heading;
-
-			let testimonials1Heading = responseJson.acf.testimonials.testimonials_1_heading;
-			let testimonials1Photo = responseJson.acf.testimonials.testimonials_1_photo.url;
-			let testimonials1Paragraph1 = responseJson.acf.testimonials.testimonials_1_paragraph_1;
-			let testimonials1Paragraph2 = responseJson.acf.testimonials.testimonials_1_paragraph_2;
-			let testimonials1Paragraph3 = responseJson.acf.testimonials.testimonials_1_paragraph_3;
-			let testimonials1Paragraph4 = responseJson.acf.testimonials.testimonials_1_paragraph_4;
-			let testimonials1Paragraph5 = responseJson.acf.testimonials.testimonials_1_paragraph_5;
-			let testimonials1Paragraph6 = responseJson.acf.testimonials.testimonials_1_paragraph_6;
-
-			let testimonials2Heading = responseJson.acf.testimonials.testimonials_2_heading;
-			let testimonials2Photo = responseJson.acf.testimonials.testimonials_2_photo.url;
-			let testimonials2Paragraph1 = responseJson.acf.testimonials.testimonials_2_paragraph_1;
-			let testimonials2Paragraph2 = responseJson.acf.testimonials.testimonials_2_paragraph_2;
-			let testimonials2Paragraph3 = responseJson.acf.testimonials.testimonials_2_paragraph_3;
-			let testimonials2Paragraph4 = responseJson.acf.testimonials.testimonials_2_paragraph_4;
-			let testimonials2Paragraph5 = responseJson.acf.testimonials.testimonials_2_paragraph_5;
-
-			let testimonials3Heading = responseJson.acf.testimonials.testimonials_3_heading;
-			let testimonials3Photo = responseJson.acf.testimonials.testimonials_3_photo.url;
-			let testimonials3Paragraph1 = responseJson.acf.testimonials.testimonials_3_paragraph_1;
-			let testimonials3Paragraph2 = responseJson.acf.testimonials.testimonials_3_paragraph_2;
-			let testimonials3Paragraph3 = responseJson.acf.testimonials.testimonials_3_paragraph_3;
+			// Trucks
+			let trucksHeading1 = responseJson.acf.trucks.trucks_heading_1;
+			let trucksHeading2 = responseJson.acf.trucks.trucks_heading_2;
+			let trucksListItem1 = responseJson.acf.trucks.trucks_list_item_1;
+			let trucksListItem2 = responseJson.acf.trucks.trucks_list_item_2;
+			let trucksListItem3 = responseJson.acf.trucks.trucks_list_item_3;
+			let trucksListItem4 = responseJson.acf.trucks.trucks_list_item_4;
+			let trucksHeading5 = responseJson.acf.trucks.trucks_heading_5;
+			let trucksParagraph1 = responseJson.acf.trucks.trucks_paragraph_1;
+			let trucksParagraph2 = responseJson.acf.trucks.trucks_paragraph_2;
+			let trucksHeading3 = responseJson.acf.trucks.trucks_heading_3;
+			let trucksHeading6 = responseJson.acf.trucks.trucks_heading_6;
+			let trucksHeading4 = responseJson.acf.trucks.trucks_heading_4;
 			
 			this.setState({
 				// Banner
@@ -130,31 +118,19 @@ export default class App extends Component {
 				mapParagraph1,
 				mapParagraph2,
 
-				// // Testimonial
-				testimonialsHeading,
-
-				testimonials1Heading,
-				testimonials1Photo,
-				testimonials1Paragraph1,
-				testimonials1Paragraph2,
-				testimonials1Paragraph3,
-				testimonials1Paragraph4,
-				testimonials1Paragraph5,
-				testimonials1Paragraph6,
-
-				testimonials2Heading,
-				testimonials2Photo,
-				testimonials2Paragraph1,
-				testimonials2Paragraph2,
-				testimonials2Paragraph3,
-				testimonials2Paragraph4,
-				testimonials2Paragraph5,
-
-				testimonials3Heading,
-				testimonials3Photo,
-				testimonials3Paragraph1,
-				testimonials3Paragraph2,
-				testimonials3Paragraph3,
+				// Trucks
+				trucksHeading1,
+				trucksHeading2,
+				trucksListItem1,
+				trucksListItem2,
+				trucksListItem3,
+				trucksListItem4,
+				trucksHeading5,
+				trucksParagraph1,
+				trucksParagraph2,
+				trucksHeading3,
+				trucksHeading6,
+				trucksHeading4,
             })
         })
 	}
@@ -231,33 +207,20 @@ export default class App extends Component {
 					mapParagraph1={this.state.mapParagraph1}
 					mapParagraph2={this.state.mapParagraph2}
 				/>
-				{/* <Testimonials
-					testimonialsHeading={this.state.testimonialsHeading}
-
-					testimonials1Heading={this.state.testimonials1Heading}
-					testimonials1Photo={this.state.testimonials1Photo}
-					testimonials1Paragraph1={this.state.testimonials1Paragraph1}
-					testimonials1Paragraph2={this.state.testimonials1Paragraph2}
-					testimonials1Paragraph3={this.state.testimonials1Paragraph3}
-					testimonials1Paragraph4={this.state.testimonials1Paragraph4}
-					testimonials1Paragraph5={this.state.testimonials1Paragraph5}
-					testimonials1Paragraph6={this.state.testimonials1Paragraph6}
-
-					testimonials2Heading={this.state.testimonials2Heading}
-					testimonials2Photo={this.state.testimonials2Photo}
-					testimonials2Paragraph1={this.state.testimonials2Paragraph1}
-					testimonials2Paragraph2={this.state.testimonials2Paragraph2}
-					testimonials2Paragraph3={this.state.testimonials2Paragraph3}
-					testimonials2Paragraph4={this.state.testimonials2Paragraph4}
-					testimonials2Paragraph5={this.state.testimonials2Paragraph5}
-
-					testimonials3Heading={this.state.testimonials3Heading}
-					testimonials3Photo={this.state.testimonials3Photo}
-					testimonials3Paragraph1={this.state.testimonials3Paragraph1}
-					testimonials3Paragraph2={this.state.testimonials3Paragraph2}
-					testimonials3Paragraph3={this.state.testimonials3Paragraph3}
-				/> */}
-				<Trucks />
+				<Trucks
+					trucksHeading1={this.state.trucksHeading1}
+					trucksHeading2={this.state.trucksHeading2}
+					trucksListItem1={this.state.trucksListItem1}
+					trucksListItem2={this.state.trucksListItem2}
+					trucksListItem3={this.state.trucksListItem3}
+					trucksListItem4={this.state.trucksListItem4}
+					trucksHeading5={this.state.trucksHeading5}
+					trucksParagraph1={this.state.trucksParagraph1}
+					trucksParagraph2={this.state.trucksParagraph2}
+					trucksHeading3={this.state.trucksHeading3}
+					trucksHeading6={this.state.trucksHeading6}
+					trucksHeading4={this.state.trucksHeading4}
+				/>
 				<Footer
 					footer={this.state.footer}
 					bannerButtonUrl={this.state.bannerButtonUrl}

@@ -10,6 +10,7 @@
         &--1 {
             font-size: 4.5rem;
             margin-top: 6rem;
+            text-transform: uppercase;
 
             @include respond(tab-port) {
                 font-size: 3rem;

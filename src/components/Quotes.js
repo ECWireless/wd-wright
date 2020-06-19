@@ -1,6 +1,4 @@
 import React, {Fragment} from 'react';
-import flagger1 from '../assets/Kid-Workers/Flagger-1.jpg';
-import flagger2 from '../assets/Kid-Workers/Flagger-2.jpg';
 
 export default function Videos(props) {
 
@@ -23,11 +21,11 @@ export default function Videos(props) {
 
 				<div className="quotes__row-2 margin-b-large">
 					<img
-						srcSet={`${flagger1} 509w, ${flagger1} 1017w`}
+						srcSet={`${props.quotesPhoto2} 50w, ${props.quotesPhoto2} 10w`}
 						sizes="(max-width: 75em) 13vw, (max-width: 56.25em) 14vw, (max-width: 37.5em) 16vw, 250px"
 						alt="Worker Holding Traffic Sign"
 						className="quotes__photo-2" 
-						src={props.quotesPhoto3}
+						src={props.quotesPhoto2}
 					/>
 
 					<div className="quotes__text-2 margin-b-medium">
@@ -43,7 +41,7 @@ export default function Videos(props) {
 						<p className="quotes__paragraph3">{props.quotesParagraph3}</p>
 					</div>
 					<img
-						srcSet={`${flagger2} 600w, ${flagger2} 1200w`}
+						srcSet={`${props.quotesPhoto3Small} 600w, ${props.quotesPhoto3} 1200w`}
 						sizes="(max-width: 75em) 24vw, (max-width: 56.25em) 27vw, (max-width: 37.5em) 30vw, 502px"
 						alt="Worker Assisting Traffic"
 						className="quotes__photo-3"
@@ -53,11 +51,11 @@ export default function Videos(props) {
 
 				<div className="quotes__row-4">
 					<img
-						srcSet={`${props.quotesPhoto3Small} 327w, ${props.quotesPhoto3} 654w`}
+						srcSet={`${props.quotesPhoto4Small} 327w, ${props.quotesPhoto4} 654w`}
 						sizes="(max-width: 75em) 38vw, (max-width: 56.25em) 50vw, (max-width: 37.5em) 45vw, 500px"
 						alt="Two children dressed in Wright worker uniform"
 						className="quotes__photo-4"
-						src={flagger2}
+						src={props.quotesPhoto4}
 					/>
 					<div className="quotes__text-4 margin-b-medium">
 						<h3 className="quotes__heading4">{props.quotesHeading4}</h3>
